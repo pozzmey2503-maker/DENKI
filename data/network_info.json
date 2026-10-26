@@ -1,0 +1,10 @@
+{
+  "local_ip": "192.168.1.5",
+  "port": 3000,
+  "local_url": "http://localhost:3000",
+  "network_url": "http://192.168.1.5:3000",
+  "tunnel_url": "https://jeremy-then-costume-indication.trycloudflare.com",
+  "https_url": "https://jeremy-then-costume-indication.trycloudflare.com",
+  "active_url": "https://jeremy-then-costume-indication.trycloudflare.com",
+  "timestamp": 1793019418
+}

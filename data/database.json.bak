@@ -1,0 +1,1610 @@
+[
+  {
+    "title": "Redz Hub - Blox Fruits (Mobile & PC) | Auto Farm, Auto Raid & Sea Event",
+    "game": "Blox Fruits",
+    "icon": "/assets/icons/hub-redz-hub.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua'))()",
+    "features": "Auto Farm Level, Auto Raid, Sea Events, Fruit Mastery",
+    "keyRequired": false
+  },
+  {
+    "title": "Banana Hub - Blox Fruits | Smooth GUI, Auto Bounty & Fast Attack",
+    "game": "Blox Fruits",
+    "icon": "/assets/icons/hub-banana-hub.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Bleck77/BananaCat/main/BananaHub.lua'))()",
+    "features": "Fast Attack, Auto Bounty, Auto Quest, Teleport",
+    "keyRequired": false
+  },
+  {
+    "title": "Blade Ball Auto Parry GUI | Fast Curve, Visuals & Auto Spam",
+    "game": "Blade Ball",
+    "icon": "/assets/icons/roblox-blade-ball.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Viunx/blade-ball/main/source.lua'))()",
+    "features": "Auto Parry, Curve Ball, Ball Visualizer, Auto Clash",
+    "keyRequired": false
+  },
+  {
+    "title": "King Legacy Auto Farm Level & Materials | Zen Hub",
+    "game": "King Legacy",
+    "icon": "/assets/icons/hub-zen-hub.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Zenhub/KingLegacy/main/loader.lua'))()",
+    "features": "Auto Farm, Material Farm, Sea King, Dungeon",
+    "keyRequired": false
+  },
+  {
+    "title": "Doors Floor 2 - Speed Hub X | Full ESP, Auto Bypass & Godmode",
+    "game": "Doors",
+    "icon": "/assets/icons/hub-speed-hub.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/ahmadrob/speedhub/main/doors.lua'))()",
+    "features": "Entity ESP, Auto Breaker, Book ESP, Full Bright",
+    "keyRequired": false
+  },
+  {
+    "title": "Arsenal Silent Aim & Aimbot GUI | ZapHub",
+    "game": "Arsenal",
+    "icon": "/assets/icons/hub-zaphub.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/zaphub/arsenal/main/loader.lua'))()",
+    "features": "Silent Aim, Wallbang, Infinite Ammo, Gun Mods",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Chilli Hub (NO KEY) | BEST GUI AUTO STEAL EGGS",
+    "game": "Steal an Egg",
+    "icon": "/assets/icons/chilli-logo.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua\"))()",
+    "features": "BEST GUI AUTO STEAL EGGS, Instant Steal, Anti Hit",
+    "keyRequired": false
+  },
+  {
+    "title": "FyyCommunity Script Hub | Keyless GUI, Auto Farm & ESP",
+    "game": "Universal",
+    "icon": "/assets/icons/script2-logo.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FyyCommunity/loader/main/script.lua\"))()",
+    "features": "Keyless GUI, Auto Farm, Player ESP, Speed & Fly",
+    "keyRequired": false
+  },
+  {
+    "title": "Create a Robot Fighter Script SoftKillz Hub | AUTO BUY, AUTO FIGHT, AUTO BUILD, AUTO UPGRADES, AUTO FARM",
+    "game": "Create a Robot Fighter",
+    "icon": "/assets/icons/roblox-create-a-robot-fighter.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastebin.com/raw/VZhHdEcK\"))()",
+    "features": "AUTO BUY, AUTO FIGHT, AUTO BUILD, AUTO UPGRADES, AUTO FARM",
+    "keyRequired": false
+  },
+  {
+    "title": "Catch a Plane Script SoftKillz Hub | AUTO FARM, AUTO CATCH, AUTO TRAIN, AUTO UPGRADES",
+    "game": "Catch a Plane! [Upd 1]",
+    "icon": "/assets/icons/roblox-catch-a-plane-upd-1.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastebin.com/raw/VZhHdEcK\"))()",
+    "features": "AUTO FARM, AUTO CATCH, AUTO TRAIN, AUTO UPGRADES",
+    "keyRequired": false
+  },
+  {
+    "title": "Hunting Together Script Ouroboros Hub | Best Auto Farm GUI",
+    "game": "🎃 [HALLOWEEN] Hunting Together",
+    "icon": "/assets/icons/hub-ouroboros-hub.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua\"))()",
+    "features": "Best Auto Farm GUI",
+    "keyRequired": false
+  },
+  {
+    "title": "Candy Kingdom Defense Script Ouroboros Hub | Macro Recorder, Auto Join & Auto Summon",
+    "game": "[🎃] Candy Kingdom Defense",
+    "icon": "/assets/icons/hub-ouroboros-hub.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua\"))()",
+    "features": "Macro Recorder, Auto Join & Auto Summon",
+    "keyRequired": false
+  },
+  {
+    "title": "Throw Food For Animals Script Ouroboros Hub | Auto Perfect Throw, Auto Pull Ups & Auto Upgrade",
+    "game": "[🎃] Throw Food For Animals",
+    "icon": "/assets/icons/hub-ouroboros-hub.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua\"))()",
+    "features": "Auto Perfect Throw, Auto Pull Ups & Auto Upgrade",
+    "keyRequired": false
+  },
+  {
+    "title": "Anime Piece Script Barrage Hub | AUTO FARM, AUTO BOSS, AUTO SKILL, AUTO STATS, FRUIT GACHA",
+    "game": "🔥 Anime Piece - Release",
+    "icon": "/assets/icons/roblox-anime-piece-release.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://barrage.cc/loader\"))()",
+    "features": "AUTO FARM, AUTO BOSS, AUTO SKILL, AUTO STATS, FRUIT GACHA",
+    "keyRequired": false
+  },
+  {
+    "title": "Free Fire Zone Script Dek Dev Hub | Aimbot, FOV Circle, Player ESP & FPS Boost",
+    "game": "Free Fire Zone (Max)",
+    "icon": "/assets/icons/roblox-free-fire-zone-max.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://dekdev.discxnnect.workers.dev/?p=\"..game.PlaceId))()",
+    "features": "Aimbot, FOV Circle, Player ESP & FPS Boost",
+    "keyRequired": false
+  },
+  {
+    "title": "The Hollow Script SoftKillz Hub | Auto Relic Run, Auto Maze & Elevator TP",
+    "game": "The Hollow",
+    "icon": "/assets/icons/roblox-the-hollow.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://datadrop.sh/8qMwaP/raw\"))()",
+    "features": "Auto Relic Run, Auto Maze & Elevator TP",
+    "keyRequired": false
+  },
+  {
+    "title": "+1 Money Per Click Script Ouroboros Hub (NO KEY) | Auto Win, Auto Click, Auto Train & Auto Hatch",
+    "game": "+1 Money Per Click 💸",
+    "icon": "/assets/icons/hub-ouroboros-hub.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua\"))()",
+    "features": "Auto Win, Auto Click, Auto Train & Auto Hatch",
+    "keyRequired": false
+  },
+  {
+    "title": "+1 Money Per Click Script 25ms Hub | Auto Win, Auto Evolve",
+    "game": "+1 Money Per Click 💸",
+    "icon": "/assets/icons/roblox-1-money-per-click.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/jewsmpnigeria-cmyk/Scripts/refs/heads/main/moneyperclick67.txt\"))()",
+    "features": "Auto Win, Auto Evolve",
+    "keyRequired": false
+  },
+  {
+    "title": "Roll a Lucky Egg Script Ouroboros Hub | Auto Perfect Roll",
+    "game": "Roll a Lucky Egg [UPDATE 1 🎃]",
+    "icon": "/assets/icons/hub-ouroboros-hub.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua\"))()",
+    "features": "Auto Perfect Roll",
+    "keyRequired": false
+  },
+  {
+    "title": "Roll a Lucky Egg Script Spiritual Gaming Hub | Auto Farm, Auto Rebirth",
+    "game": "Roll a Lucky Egg [UPDATE 1 🎃]",
+    "icon": "/assets/icons/roblox-roll-a-lucky-egg-update-1.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://gist.githubusercontent.com/spiritualgaming1123-beep/3009ce0a1a6fd309438e00350150340b/raw/e392f03fde6514f2c362051a963c1cc4a2f0fbd9/RollALuckyEgg\"))()",
+    "features": "Auto Farm, Auto Rebirth",
+    "keyRequired": false
+  },
+  {
+    "title": "Cameraman Tower Defense Script KeroHub | AUTOFARM, AUTO WIN, INF COINS",
+    "game": "[💰X2] Cameraman Tower Defense",
+    "icon": "/assets/icons/roblox-x2-cameraman-tower-defense.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/KeroTwT/Kero-Hub/refs/heads/main/KeroHub\"))()",
+    "features": "AUTOFARM, AUTO WIN, INF COINS",
+    "keyRequired": false
+  },
+  {
+    "title": "KNIFE DUELS Script Vortix Hub | ESP, Aimbot, TriggerBot, Fov Slider",
+    "game": "[🎃] KNIFE DUELS",
+    "icon": "/assets/icons/roblox-knife-duels.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/jaypob65-cmyk/kd/refs/heads/main/Knife%20Duels%20Vortix%20Hub\"))()",
+    "features": "ESP, Aimbot, TriggerBot, Fov Slider",
+    "keyRequired": false
+  },
+  {
+    "title": "KNIFE DUELS Script Scriptly Hub | Aimbot, ESP, Player Mod and More",
+    "game": "[🎃] KNIFE DUELS",
+    "icon": "/assets/icons/roblox-knife-duels.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/wowlolxd1/knifeduels/refs/heads/main/knifeduels.lua\"))()",
+    "features": "Aimbot, ESP, Player Mod and More",
+    "keyRequired": false
+  },
+  {
+    "title": "KNIFE DUELS Script Saphira Hub | ESP, TriggerBot, Silent Aim and More",
+    "game": "[🎃] KNIFE DUELS",
+    "icon": "/assets/icons/roblox-knife-duels.png",
+    "loadstring": "getgenv().AutoExec = true -- Auto Exec Script on Server Hop\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/VXR4/Scripts/refs/heads/main/init.luau\"))()",
+    "features": "ESP, TriggerBot, Silent Aim and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Get Script KNIFE DUELS Roblox | Silent Aim, Knife Aura, Esp (NO KEY!!)",
+    "game": "[🎃] KNIFE DUELS",
+    "icon": "/assets/icons/roblox-knife-duels.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/imshrak/knifeduels/refs/heads/main/menu'))()",
+    "features": "Silent Aim, Knife Aura, Esp (NO KEY!!)",
+    "keyRequired": false
+  },
+  {
+    "title": "Anime Fighting Simulator Script BPHUB | ESP FRUIT , AUTO FARM QUEST, AUTO FARM ALL",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v4/loaders/467778b7e06d29cb032367938bfa7210.lua\"))()",
+    "features": "ESP FRUIT , AUTO FARM QUEST, AUTO FARM ALL",
+    "keyRequired": false
+  },
+  {
+    "title": "[💥UPDATE 1] Anime Fighting Simulator Script (Apel Hub) - Auto Farm GUI and More",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ApelsinkaFr/ApelHub/refs/heads/main/ApelHub\"))()",
+    "features": "Auto Farm GUI and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Anime Fighting Simulator Script GUI | Auto Training, Auto Farm Mobs, Auto Collect, NoClip, Teleports",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/AkatsukiHub1/AFS/refs/heads/main/README.md'))()",
+    "features": "Auto Training, Auto Farm Mobs, Auto Collect, NoClip, Teleports",
+    "keyRequired": false
+  },
+  {
+    "title": "Anime Fighting Simulator Script Cyber Coders Hub -  Auto Attack, Auto Farm Stats, Tp NPC",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/CyberCodersStudio/CyberCoders/refs/heads/main/Script\"))()",
+    "features": "Auto Attack, Auto Farm Stats, Tp NPC",
+    "keyRequired": false
+  },
+  {
+    "title": "Anime Fighting Simulator Script New Best Shadow Hub - Auto Train, Redeem all Codes, Auto Farm",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ShadowXScript/Shadow-Hub/refs/heads/main/AFSE/loader.lua\"))()",
+    "features": "Auto Train, Redeem all Codes, Auto Farm",
+    "keyRequired": false
+  },
+  {
+    "title": "[⚔️] Anime Fighting Simulator: Endless Script | Lumin Hub",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet(\"http://luminon.top/loader.lua\"))()",
+    "features": "Lumin Hub",
+    "keyRequired": false
+  },
+  {
+    "title": "AFSE Script - Auto Farm, Inf Chikara, Bloodlines,Max All Stats",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/inosuke-creator/gna-gits/refs/heads/main/loader2.lua\"))()",
+    "features": "Auto Farm, Inf Chikara, Bloodlines,Max All Stats",
+    "keyRequired": false
+  },
+  {
+    "title": "Anime Fighting Simulator: Endless Script 2026 - Max Stats, GodMode, Auto Farm, Teleport",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet(\"https://gist.githubusercontent.com/BlockyCoder/ff20bf5ea1416ffc7f0c98055c8ef8e5/raw/1b65fe55f2d53c834cd5bdfdc536939f1d1b23d6/Anime%2520Fighting%2520Simulator%2520Endless\"))()",
+    "features": "Max Stats, GodMode, Auto Farm, Teleport",
+    "keyRequired": false
+  },
+  {
+    "title": "Anime Fighting Simulator Script NS Hub - Best Auto Farm, Fast Auto Areas, Teleport and More",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/OhhMyGehlee/sh/refs/heads/main/a\"))()",
+    "features": "Best Auto Farm, Fast Auto Areas, Teleport and More",
+    "keyRequired": false
+  },
+  {
+    "title": "[🎄CHRISTMAS] AFS Endless Script - Kill Aura, Max Stats, Auto Train, Auto Chakra",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/jokerbiel13/FourHub/refs/heads/main/AFSEV1.5.lua\",true))()",
+    "features": "Kill Aura, Max Stats, Auto Train, Auto Chakra",
+    "keyRequired": false
+  },
+  {
+    "title": "Anime Fighting Simulator Script Auto Farm GUI",
+    "game": "[🌀 UPDATE 12] Anime Fighting Simulator",
+    "icon": "/assets/icons/anime-fighting-simulator-script-auto-farm-esp-teleport.jpg",
+    "loadstring": "-- StarterPlayerScripts/AutoTrain.client.lua\n\nlocal Players = game:GetService(\"Players\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal UserInputService = game:GetService(\"UserInputService\")\n\nlocal player = Players.LocalPlayer\nlocal Remotes = ReplicatedStorage:WaitForChild(\"Remotes\")\nlocal TrainRemote = Remotes:WaitForChild(\"RemoteEvent\")\n\n-- ===== SETTINGS =====\nlocal TRAIN_DELAY = 0.25\nlocal Y_OFFSET = 6\n\n-- Big numbers\nlocal K  = 1_000\nlocal M  = 1_000_000\nlocal B  = 1_000_000_000\nlocal T  = 1_000_000_000_000\nlocal QD = 1_000_000_000_000_000 -- quadrillion (10^15)\n\n-- ===== Stat IDs (also Train IDs) =====\nlocal STAT_ID = {\n    Strength   = 1,\n    Durability = 2,\n    Chakra     = 3,\n    Sword      = 4,\n    Agility    = 5,\n    Speed      = 6,\n}\n\n-- ===== Spots (merged + corrected) =====\n-- Best spot = highest req <= current stat value\nlocal SPOTS = {\n    Strength = {\n        { req = 100,    path = \"Workspace.Map.TrainingAreas.Training Dummy\", label = \"Dummy (100 Strength)\" },\n        { req = 100*K,  path = \"Workspace.Map.TrainingAreas.Fridge.Part\", label = \"Fridge (100K Strength)\" },\n        { req = 1*M,    path = \"Workspace.Map.TrainingAreas.Meteor\", label = \"Meteor (1M Strength)\" },\n        { req = 100*M,  path = \"Workspace.Map.TrainingAreas.Arena.Part\", label = \"Arena (100M Strength)\" },\n        { req = 1*B,    path = \"Workspace.Map.TrainingAreas.ExcaliburRocks.Model\", label = \"Excalibur (1B Strength)\" },\n        { req = 50*T,   path = \"Workspace.Map.TrainingAreas.FloatingIsland\", label = \"Floating Island (50T Strength)\" },\n    },\n\n    Durability = {\n        { req = 100,    path = \"Workspace.Map.TrainingAreas.Pirate ship.Model\", label = \"Ship (100 Durability)\" },\n        { req = 1*M,    path = \"Workspace.Map.TrainingAreas.Paw\", label = \"Paw (1M Durability)\" },\n        { req = 100*M,  path = \"Workspace.Map.TrainingAreas.BlackFire.Fire\", label = \"Black Flames (100M Durability)\" },\n    },\n\n    Chakra = {\n        -- CHANGED: Chakra Tree target\n        { req = 100,    path = \"Workspace.Map.TrainingAreas.Tree1.ObjectRoot\", label = \"Chakra Tree (100 Chakra)\" },\n        { req = 100*K,  path = \"Workspace.Map.TrainingAreas.Waterfall.Pillar\", label = \"Waterfall (100K Chakra)\" },\n        { req = 10*M,   path = \"Workspace.Map.TrainingAreas.Fox.Fox\", label = \"Fox Statue (10M Chakra)\" },\n        { req = 100*M,  path = \"Workspace.Map.TrainingAreas.PinkSwords.Handle\", label = \"Sakura Tree (100M Chakra)\" },\n        { req = 50*T,   path = \"Workspace.Map.TrainingAreas.RamenShop.polySurface481\", label = \"Ramen Shop (50T Chakra)\" },\n        { req = 25*QD,  path = \"Workspace.Map.TrainingAreas.Ultimate Dragon.Meshes/shenron4\", label = \"Dragon (25QD Chakra)\" },\n    },\n\n    Agility = {\n        { req = 100,    path = \"Workspace.Map.TrainingAreas.Trampoline.Bouncy\", label = \"Trampoline (100 Agility)\" },\n        { req = 10*K,   path = \"Workspace.Map.TrainingAreas.Gravity.Part\", label = \"Gravity Chamber (10K Agility)\" },\n    },\n\n    Speed = {\n        { req = 100,    path = \"Workspace.Map.TrainingAreas.Treadmills\", label = \"Treadmills (100 Speed)\" },\n        { req = 10*K,   path = \"Workspace.Map.TrainingAreas.Gravity.Part\", label = \"Gravity Chamber (10K Speed)\" },\n    },\n\n    Sword = {\n        -- Add sword locations later when you find them\n    },\n}\n\n-- ===== HELPERS =====\nlocal function readNumberValue(inst: Instance): number?\n    if inst and (inst:IsA(\"IntValue\") or inst:IsA(\"NumberValue\")) then\n        return inst.Value\n    end\n    return nil\nend\n\n-- Reads from Players.LocalPlayer.Stats[\"1\"..\"7\"]\nlocal function getStatValue(statName: string): number\n    local id = STAT_ID[statName]\n    if not id then return 0 end\n\n    local statsFolder = player:FindFirstChild(\"Stats\")\n    if not statsFolder then return 0 end\n\n    local valObj = statsFolder:FindFirstChild(tostring(id))\n    local v = readNumberValue(valObj)\n    return v or 0\nend\n\nlocal function getHRP()\n    local char = player.Character\n    if not char then return nil end\n    return char:FindFirstChild(\"HumanoidRootPart\")\nend\n\nlocal function findAnyBasePart(root: Instance): BasePart?\n    if not root then return nil end\n    if root:IsA(\"BasePart\") then return root end\n    if root:IsA(\"Model\") and root.PrimaryPart then return root.PrimaryPart end\n\n    for _, d in ipairs(root:GetDescendants()) do\n        if d:IsA(\"MeshPart\") then return d end\n    end\n    for _, d in ipairs(root:GetDescendants()) do\n        if d:IsA(\"BasePart\") then return d end\n    end\n    return nil\nend\n\nlocal function resolveFromWorkspace(path: string): Instance?\n    path = path:gsub(\"^Ugc%.\", \"\")\n    path = path:gsub(\"^Workspace%.\", \"\")\n\n    local cur: Instance = workspace\n    for token in path:gmatch(\"[^%.]+\") do\n        local nxt = cur:FindFirstChild(token)\n        if not nxt then return nil end\n        cur = nxt\n    end\n    return cur\nend\n\nlocal function teleportToPath(path: string): boolean\n    local hrp = getHRP()\n    if not hrp then return false end\n\n    local inst = resolveFromWorkspace(path)\n    if not inst then return false end\n\n    local part = findAnyBasePart(inst)\n    if not part then return false end\n\n    hrp.CFrame = part.CFrame + Vector3.new(0, Y_OFFSET, 0)\n    return true\nend\n\nlocal function getBestSpot(statName: string)\n    local list = SPOTS[statName]\n    if not list or #list == 0 then return nil end\n\n    local value = getStatValue(statName)\n    local best = nil\n    for _, s in ipairs(list) do\n        if value >= s.req then\n            if (not best) or (s.req > best.req) then\n                best = s\n            end\n        end\n    end\n    return best\nend\n\n-- ===== Main loop =====\nlocal enabled = {}\nlocal teleportedOnce = {}\nlocal lastChosenText = \"None\"\n\nlocal function teleportOnceIfNeeded(statName: string)\n    if teleportedOnce[statName] then return end\n\n    local best = getBestSpot(statName)\n    if not best then\n        lastChosenText = statName .. \": No eligible spot\"\n        teleportedOnce[statName] = true\n        return\n    end\n\n    local ok = teleportToPath(best.path)\n    lastChosenText = statName .. \": \" .. best.label .. (ok and \"\" or \" (PATH NOT FOUND)\")\n    teleportedOnce[statName] = true\nend\n\ntask.spawn(function()\n    while true do\n        for statName, on in pairs(enabled) do\n            if on then\n                -- Teleport only once per toggle ON\n                teleportOnceIfNeeded(statName)\n\n                -- Train continuously\n                local id = STAT_ID[statName]\n                if id then\n                    TrainRemote:FireServer(\"Train\", id)\n                end\n            end\n        end\n        task.wait(TRAIN_DELAY)\n    end\nend)\n\n-- ===== UI =====\nlocal gui = Instance.new(\"ScreenGui\")\ngui.Name = \"AutoTrainGui\"\ngui.ResetOnSpawn = false\ngui.Parent = player:WaitForChild(\"PlayerGui\")\n\nlocal frame = Instance.new(\"Frame\")\nframe.Size = UDim2.fromOffset(360, 540)\nframe.Position = UDim2.fromOffset(20, 120)\nframe.BackgroundColor3 = Color3.fromRGB(30, 30, 30)\nframe.BorderSizePixel = 0\nframe.Parent = gui\n\nlocal topBar = Instance.new(\"Frame\")\ntopBar.Size = UDim2.new(1, 0, 0, 34)\ntopBar.BackgroundColor3 = Color3.fromRGB(20, 20, 20)\ntopBar.BorderSizePixel = 0\ntopBar.Parent = frame\n\nlocal title = Instance.new(\"TextLabel\")\ntitle.Size = UDim2.new(1, 0, 1, 0)\ntitle.BackgroundTransparency = 1\ntitle.Text = \"ANIMEGPT\"\ntitle.TextColor3 = Color3.new(1, 1, 1)\ntitle.TextSize = 16\ntitle.Parent = topBar\n\n-- Dragging\ndo\n    local dragging = false\n    local dragStart, startPos\n    topBar.InputBegan:Connect(function(input)\n        if input.UserInputType == Enum.UserInputType.MouseButton1 then\n            dragging = true\n            dragStart = input.Position\n            startPos = frame.Position\n        end\n    end)\n    UserInputService.InputChanged:Connect(function(input)\n        if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then\n            local delta = input.Position - dragStart\n            frame.Position = UDim2.new(\n                startPos.X.Scale, startPos.X.Offset + delta.X,\n                startPos.Y.Scale, startPos.Y.Offset + delta.Y\n            )\n        end\n    end)\n    UserInputService.InputEnded:Connect(function(input)\n        if input.UserInputType == Enum.UserInputType.MouseButton1 then\n            dragging = false\n        end\n    end)\nend\n\nlocal container = Instance.new(\"Frame\")\ncontainer.Position = UDim2.fromOffset(10, 44)\ncontainer.Size = UDim2.new(1, -20, 1, -54)\ncontainer.BackgroundTransparency = 1\ncontainer.Parent = frame\n\nlocal layout = Instance.new(\"UIListLayout\")\nlayout.Padding = UDim.new(0, 8)\nlayout.Parent = container\n\nlocal function makeButton(text, onclick)\n    local btn = Instance.new(\"TextButton\")\n    btn.Size = UDim2.fromOffset(340, 34)\n    btn.Text = text\n    btn.BackgroundColor3 = Color3.fromRGB(45, 45, 45)\n    btn.TextColor3 = Color3.new(1, 1, 1)\n    btn.BorderSizePixel = 0\n    btn.Parent = container\n    btn.MouseButton1Click:Connect(onclick)\n    return btn\nend\n\nlocal statsLabel = Instance.new(\"TextLabel\")\nstatsLabel.Size = UDim2.fromOffset(340, 150)\nstatsLabel.BackgroundTransparency = 1\nstatsLabel.TextColor3 = Color3.new(1, 1, 1)\nstatsLabel.TextXAlignment = Enum.TextXAlignment.Left\nstatsLabel.TextYAlignment = Enum.TextYAlignment.Top\nstatsLabel.TextSize = 13\nstatsLabel.Text = \"Loading stats...\"\nstatsLabel.Parent = container\n\nlocal chosenLabel = Instance.new(\"TextLabel\")\nchosenLabel.Size = UDim2.fromOffset(340, 42)\nchosenLabel.BackgroundTransparency = 1\nchosenLabel.TextColor3 = Color3.new(1, 1, 1)\nchosenLabel.TextXAlignment = Enum.TextXAlignment.Left\nchosenLabel.TextYAlignment = Enum.TextYAlignment.Top\nchosenLabel.TextSize = 13\nchosenLabel.Text = \"Chosen: None\"\nchosenLabel.Parent = container\n\n-- Credits bottom-right\nlocal credits = Instance.new(\"TextLabel\")\ncredits.AnchorPoint = Vector2.new(1, 1)\ncredits.Position = UDim2.new(1, -8, 1, -6)\ncredits.Size = UDim2.fromOffset(140, 18)\ncredits.BackgroundTransparency = 1\ncredits.Text = \"@chatgpt\"\ncredits.TextColor3 = Color3.fromRGB(200, 200, 200)\ncredits.TextSize = 12\ncredits.TextXAlignment = Enum.TextXAlignment.Right\ncredits.TextYAlignment = Enum.TextYAlignment.Bottom\ncredits.Parent = frame\n\ntask.spawn(function()\n    while statsLabel.Parent do\n        statsLabel.Text =\n            (\"Stats folder values:\\nStrength(1): %d\\nDurability(2): %d\\nChakra(3): %d\\nSword(4): %d\\nAgility(5): %d\\nSpeed(6): %d\"):format(\n                getStatValue(\"Strength\"),\n                getStatValue(\"Durability\"),\n                getStatValue(\"Chakra\"),\n                getStatValue(\"Sword\"),\n                getStatValue(\"Agility\"),\n                getStatValue(\"Speed\")\n            )\n        chosenLabel.Text = \"Chosen: \" .. lastChosenText\n        task.wait(0.4)\n    end\nend)\n\nlocal function makeToggle(statName: string)\n    enabled[statName] = false\n    local btn\n    btn = makeButton(statName .. \": OFF\", function()\n        enabled[statName] = not enabled[statName]\n        btn.Text = statName .. \": \" .. (enabled[statName] and \"ON\" or \"OFF\")\n\n        if enabled[statName] then\n            teleportedOnce[statName] = false\n            teleportOnceIfNeeded(statName)\n        else\n            teleportedOnce[statName] = false\n        end\n    end)\nend\n\nmakeToggle(\"Chakra\")\nmakeToggle(\"Strength\")\nmakeToggle(\"Durability\")\nmakeToggle(\"Agility\")\nmakeToggle(\"Speed\")\nmakeToggle(\"Sword\")\n\nmakeButton(\"STOP ALL\", function()\n    for k in pairs(enabled) do\n        enabled[k] = false\n        teleportedOnce[k] = false\n    end\n    for _, child in ipairs(container:GetChildren()) do\n        if child:IsA(\"TextButton\") and child.Text:find(\":\") then\n            local name = child.Text:match(\"(.+):\")\n            if name then child.Text = name .. \": OFF\" end\n        end\n    end\n    lastChosenText = \"None\"\nend)",
+    "features": "Auto Farm, ESP, Teleport",
+    "keyRequired": false
+  },
+  {
+    "title": "DRIVE: Highway Script Barrage Hub | AUTO DRIVE, AUTO RACE, DRAG ASSIST, AUTO UPGRADE, AUTO CRATE",
+    "game": "DRIVE: Highway Script",
+    "icon": "/assets/icons/roblox-drive-highway-script.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://barrage.cc/loader\"))()",
+    "features": "AUTO DRIVE, AUTO RACE, DRAG ASSIST, AUTO UPGRADE, AUTO CRATE",
+    "keyRequired": false
+  },
+  {
+    "title": "Car Dealership Tycoon Script Event | Auto Farm (NO KEY)",
+    "game": "Car Dealership Tycoon [🎃]",
+    "icon": "/assets/icons/roblox-car-dealership-tycoon.png",
+    "loadstring": "local Workspace = game:GetService(\"Workspace\")\nlocal Players = game:GetService(\"Players\")\nlocal TweenService = game:GetService(\"TweenService\")\n\nlocal LP = Players.LocalPlayer\n\nlocal CONFIG = {\n    Enabled = false,\n    FlySpeed = 300,\n    MaxSize = 10,\n    WaitTime = 30,\n}\n\nlocal blacklistedZones = {}\n\nlocal sg = Instance.new(\"ScreenGui\")\nsg.Name = \"PumpkinFarmGUI\"\nsg.ResetOnSpawn = false\nsg.Parent = LP:WaitForChild(\"PlayerGui\")\n\nlocal frame = Instance.new(\"Frame\")\nframe.Size = UDim2.new(0, 220, 0, 140)\nframe.Position = UDim2.new(0.5, -110, 0, 50)\nframe.BackgroundColor3 = Color3.fromRGB(30, 30, 30)\nframe.BorderSizePixel = 2\nframe.BorderColor3 = Color3.fromRGB(255, 140, 0)\nframe.Parent = sg\n\nlocal btnAutoFarm = Instance.new(\"TextButton\")\nbtnAutoFarm.Size = UDim2.new(1, -20, 0, 45)\nbtnAutoFarm.Position = UDim2.new(0, 10, 0, 10)\nbtnAutoFarm.BackgroundColor3 = Color3.fromRGB(200, 50, 50)\nbtnAutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)\nbtnAutoFarm.Font = Enum.Font.SourceSansBold\nbtnAutoFarm.TextSize = 18\nbtnAutoFarm.Text = \"AUTO-FARM: OFF\"\nbtnAutoFarm.Parent = frame\n\nlocal btnExclude = Instance.new(\"TextButton\")\nbtnExclude.Size = UDim2.new(1, -20, 0, 45)\nbtnExclude.Position = UDim2.new(0, 10, 0, 65)\nbtnExclude.BackgroundColor3 = Color3.fromRGB(255, 140, 0)\nbtnExclude.TextColor3 = Color3.fromRGB(255, 255, 255)\nbtnExclude.Font = Enum.Font.SourceSansBold\nbtnExclude.TextSize = 16\nbtnExclude.Text = \"EXCLUDE THIS PLACE\"\nbtnExclude.Parent = frame\n\nlocal statusLabel = Instance.new(\"TextLabel\")\nstatusLabel.Size = UDim2.new(1, -20, 0, 30)\nstatusLabel.Position = UDim2.new(0, 10, 0, 115)\nstatusLabel.BackgroundTransparency = 1\nstatusLabel.TextColor3 = Color3.fromRGB(200, 200, 200)\nstatusLabel.Font = Enum.Font.SourceSans\nstatusLabel.TextSize = 14\nstatusLabel.Text = \"Status: Waiting...\"\nstatusLabel.Parent = frame\n\nbtnAutoFarm.MouseButton1Click:Connect(function()\n    CONFIG.Enabled = not CONFIG.Enabled\n    btnAutoFarm.Text = CONFIG.Enabled and \"AUTO-FARM: ON\" or \"AUTO-FARM: OFF\"\n    btnAutoFarm.BackgroundColor3 = CONFIG.Enabled and Color3.fromRGB(50, 200, 50) or Color3.fromRGB(200, 50, 50)\nend)\n\nbtnExclude.MouseButton1Click:Connect(function()\n    local char = LP.Character\n    if char and char:FindFirstChild(\"HumanoidRootPart\") then\n        table.insert(blacklistedZones, char.HumanoidRootPart.Position)\n        btnExclude.Text = \"ZONE ADDED!\"\n        task.wait(1)\n        btnExclude.Text = \"EXCLUDE THIS PLACE\"\n    end\nend)\n\nlocal function isBlacklisted(pos)\n    for _, zone in ipairs(blacklistedZones) do\n        if (pos - zone).Magnitude < 150 then return true end\n    end\n    return false\nend\n\nlocal function isRealPumpkin(obj)\n    local name = obj.Name:lower()\n    local parentName = obj.Parent and obj.Parent.Name:lower() or \"\"\n    \n    local nameMatch = name:find(\"pumpkin\") or name:find(\"halloween\") or name:find(\"jack\") or\n                      parentName:find(\"pumpkin\")\n                      \n    local hasInteractive = obj:FindFirstChildOfClass(\"ClickDetector\") or \n                           obj:FindFirstChildOfClass(\"ProximityPrompt\") or\n                           (obj.Parent and obj.Parent:FindFirstChildOfClass(\"ClickDetector\"))\n                           \n    return nameMatch or hasInteractive\nend\n\nlocal function findPumpkins()\n    local list = {}\n    for _, child in ipairs(Workspace:GetDescendants()) do\n        if child:IsA(\"BasePart\") or child:IsA(\"MeshPart\") then\n            local s = child.Size\n            if math.max(s.X, s.Y, s.Z) <= CONFIG.MaxSize \n               and not child:IsDescendantOf(LP.Character) \n               and not isBlacklisted(child.Position)\n               and isRealPumpkin(child) then\n                table.insert(list, child)\n            end\n        end\n    end\n    return list\nend\n\nlocal function flyTo(target)\n    local char = LP.Character\n    if not char then return end\n    local hrp = char:FindFirstChild(\"HumanoidRootPart\")\n    if not hrp then return end\n\n    local dist = (target.Position - hrp.Position).Magnitude\n    local duration = math.clamp(dist / CONFIG.FlySpeed, 0.1, 3)\n    \n    local tween = TweenService:Create(hrp, TweenInfo.new(duration, Enum.EasingStyle.Linear), {CFrame = CFrame.new(target.Position + Vector3.new(0, 2, 0))})\n    tween:Play()\n    tween.Completed:Wait()\n    \n    local click = target:FindFirstChildOfClass(\"ClickDetector\") or (target.Parent and target.Parent:FindFirstChildOfClass(\"ClickDetector\"))\n    if click and fireclickdetector then\n        fireclickdetector(click)\n    end\nend\n\ntask.spawn(function()\n    while true do\n        if CONFIG.Enabled then\n            local pumpkins = findPumpkins()\n            \n            if #pumpkins > 0 then\n                local hrp = LP.Character and LP.Character:FindFirstChild(\"HumanoidRootPart\")\n                if hrp then\n                    table.sort(pumpkins, function(a, b)\n                        return (a.Position - hrp.Position).Magnitude < (b.Position - hrp.Position).Magnitude\n                    end)\n                end\n                \n                for _, p in ipairs(pumpkins) do\n                    if not CONFIG.Enabled then break end\n                    if p.Parent then\n                        statusLabel.Text = \"Status: Collecting (\" .. #pumpkins .. \" left)\"\n                        flyTo(p)\n                        task.wait(0.3)\n                    end\n                end\n            else\n                statusLabel.Text = \"Status: Waiting respawn (30s)\"\n                local timeLeft = CONFIG.WaitTime\n                while timeLeft > 0 and CONFIG.Enabled do\n                    statusLabel.Text = \"Status: Waiting respawn (\" .. timeLeft .. \"s)\"\n                    task.wait(1)\n                    timeLeft = timeLeft - 1\n                end\n            end\n        else\n            statusLabel.Text = \"Status: Off\"\n            task.wait(0.5)\n        end\n        task.wait(0.5)\n    end\nend)",
+    "features": "Auto Farm (NO KEY)",
+    "keyRequired": false
+  },
+  {
+    "title": "Car Dealership Tycoon [🎃] Script ToraHub | Collect Pumpkin, Crystal, Auto Race",
+    "game": "Car Dealership Tycoon [🎃]",
+    "icon": "/assets/icons/roblox-car-dealership-tycoon.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/gumanba/Scripts/main/CarDealershipHalloween\"))()",
+    "features": "Collect Pumpkin, Crystal, Auto Race",
+    "keyRequired": false
+  },
+  {
+    "title": "Car Dealership Tycoon Script Best (IceWare Hub) - Auto Delivery, Auto Race, Auto Farm, Auto Vote",
+    "game": "Car Dealership Tycoon [🎃]",
+    "icon": "/assets/icons/roblox-car-dealership-tycoon.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Iceware-RBLX/Roblox/refs/heads/main/loader.lua\",true))()",
+    "features": "Auto Delivery, Auto Race, Auto Farm, Auto Vote",
+    "keyRequired": false
+  },
+  {
+    "title": "Car Dealership Tycoon Script/Hack - Auto Farm Race, Farm Money, Farm Delivery",
+    "game": "Car Dealership Tycoon [🎃]",
+    "icon": "/assets/icons/roblox-car-dealership-tycoon.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://norepinefrina.com\"))()",
+    "features": "Auto Farm Race, Farm Money, Farm Delivery",
+    "keyRequired": false
+  },
+  {
+    "title": "Car Dealership Tycoon Script - Auto Collect Eggs, Auto Ramps, Auto Speed Cameras",
+    "game": "Car Dealership Tycoon [🎃]",
+    "icon": "/assets/icons/roblox-car-dealership-tycoon.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/checkurasshole/Script/refs/heads/main/IQ'))();",
+    "features": "Auto Collect Eggs, Auto Ramps, Auto Speed Cameras",
+    "keyRequired": false
+  },
+  {
+    "title": "Get Script Car Dealership Tycoon (SEASON 14) LDS Hub",
+    "game": "Car Dealership Tycoon [🎃]",
+    "icon": "/assets/icons/roblox-car-dealership-tycoon.png",
+    "loadstring": "loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/49f02b0d8c1f60207c84ae76e12abc1e.lua'))()",
+    "features": "Auto Farm, Keyless GUI, Undetected",
+    "keyRequired": false
+  },
+  {
+    "title": "Get Script Car Dealership Tycoon",
+    "game": "Car Dealership Tycoon [🎃]",
+    "icon": "/assets/icons/roblox-car-dealership-tycoon.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Marco8642/science/main/car%20dealer\", true))()",
+    "features": "Auto Farm, Keyless GUI, Undetected",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script BigFroot | Auto Steal Eggs and More",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/hanniii1/Loader/refs/heads/main/BFLoader.lua\"))()",
+    "features": "Auto Steal Eggs and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script No-Lag Hub | INSTANT STEAL, ANTI HIT, RIDE A GUARDIAN, AUTO STEAL",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://nolag.wtf/script.lua\"))()",
+    "features": "INSTANT STEAL, ANTI HIT, RIDE A GUARDIAN, AUTO STEAL",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Pulse Hub No Key | WINS RACING EVENT, INSTANT STEAL EGGS",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/PulseZax/Loader/refs/heads/main/.lua\"))()",
+    "features": "WINS RACING EVENT, INSTANT STEAL EGGS",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Nox SAE Hub Keyless | Auto steal and More",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://noxscript.com/loader\"))()",
+    "features": "Auto steal and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal an Egg Script CloutHub Keyless | Enchanted Forest Farm",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ClouthubOnTop/Loader/main/main.lua\"))()",
+    "features": "Enchanted Forest Farm",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Polluted Hub | INSTANT STEAL EGGS (Enchanted Forest)",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/PollutedHub/Sae/refs/heads/main/SaePolluted\"))()",
+    "features": "INSTANT STEAL EGGS (Enchanted Forest)",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script SourceHub – Auto Farm, Instant Steal, New Biome, God Mode",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastefy.app/Lk0vDMmN/raw\"))()",
+    "features": "Auto Steal, Auto Hatch, Egg Farm",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Limbo Hub | Auto Steal, Bat Aura",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://limbohub.my.id/loader.lua\"))()",
+    "features": "Auto Steal, Bat Aura",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script DryNyx Hub | INSTANT STEAL, AUTO BOSS, EVENT",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://synex.lat/loaders/stealegg.lua\"))()",
+    "features": "INSTANT STEAL, AUTO BOSS, EVENT",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script PulseHub | Instant Steal, Auto Farm, Dr. Scramble Event, God Mode, Auto Drone",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/PulseZax/Loader/refs/heads/main/.lua\"))()",
+    "features": "Instant Steal, Auto Farm, Dr. Scramble Event, God Mode, Auto Drone",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Kira Hub | Auto Steal, Anti Trap, Auto Sell, Auto Hatch",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/LSSOPS/OpenSource/refs/heads/main/KiraHub_Steal_An_Egg.lua\"))()",
+    "features": "Auto Steal, Anti Trap, Auto Sell, Auto Hatch",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal an Egg Script CM Hub | Auto Eggs, Auto Hatch, Auto Sell, Upgrade, Fuse Predict",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://cmhub-key-system.vercel.app/roblox/loader.lua\"))()",
+    "features": "Auto Eggs, Auto Hatch, Auto Sell, Upgrade, Fuse Predict",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Yokudo Hub - DR. SCRAMBLE EVENT, AUTO DRONE",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/betdoyvaka/stealanegg/main/Loader.lua\"))()",
+    "features": "DR. SCRAMBLE EVENT, AUTO DRONE",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script ClouthHub | Egg Sniper, Staff Auto Leave, Auto Steal",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ClouthubOnTop/Loader/main/main.lua\"))()",
+    "features": "Egg Sniper, Staff Auto Leave, Auto Steal",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Chilli Hub (NO KEY) | BEST GUI AUTO STEAL EGGS",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/chilli-logo.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua\"))()",
+    "features": "BEST GUI AUTO STEAL EGGS",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Nevahub No Key | Auto Steal, Godmode, Teleport and More",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2\"))()",
+    "features": "Auto Steal, Godmode, Teleport and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Jane Hub | AUTO STEAL, AUTO HATCH, AUTO PICKUP, AUTO SELL",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://flowauth.net/v1/loaders/b88a6143b351d79f4c5a108ec33b5a2c.lua\"))()",
+    "features": "AUTO STEAL, AUTO HATCH, AUTO PICKUP, AUTO SELL",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Tsuo Hub | Fast Instant Steal, Auto Farm, Auto Ring, Angel & Demon Eggs",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/stealanegg\"))()",
+    "features": "Fast Instant Steal, Auto Farm, Auto Ring, Angel & Demon Eggs",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script UB Hub | Auto Steal, Pet Predictor, Auto Hatch, Auto Place",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/TeamUBHub/UBLoader/refs/heads/main/Loader.lua\"))()",
+    "features": "Auto Steal, Pet Predictor, Auto Hatch, Auto Place",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Sena Hub | Auto Steal, Auto Rift Boss, Auto Upgrade",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/senarblx/sena/refs/heads/main/loader'))()",
+    "features": "Auto Steal, Auto Rift Boss, Auto Upgrade",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Zeroin Hub | AUTO BOSS FIGHT, INSTANT STEAL",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://zeroinhub.com/api/script\"))()",
+    "features": "AUTO BOSS FIGHT, INSTANT STEAL",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script BlyxoHu Hub | Instant Steal, Steal Everything, Auto Event OP",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://flowauth.net/v1/loaders/69d3463240384f3a73fbe32c178093a2.lua\"))()",
+    "features": "Instant Steal, Steal Everything, Auto Event OP",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Oxide Hub | AUTOFARM, INSTANT STEAL, GODMODE",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/xulfo/Oxide-Loader/main/Main.lua\"))()",
+    "features": "AUTOFARM, INSTANT STEAL, GODMODE",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Axon Hub | Fast Instant Steal, Auto Farm, The Rift Event, God Mode",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/97c3f6db55a2cf72141537a85458e5a7.lua\"))()",
+    "features": "Fast Instant Steal, Auto Farm, The Rift Event, God Mode",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Miranda Hub | INSTANT STEAL, SHOW EGG DATA",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/miirandahub/loader/refs/heads/main/stealaegg\"))()",
+    "features": "INSTANT STEAL, SHOW EGG DATA",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Lennon Hub | Auto Farm Top Eggs",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.jnkie.com/api/v1/luascripts/public/bf52181bce5c28e6ecd16eebfa1a88ddaf646c7acb10015fbaa7b30dc7bad0a8/download\"))()",
+    "features": "Auto Farm Top Eggs",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script OMG Hub | INSTA STEAL, GOD MODE and More",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua\"))()",
+    "features": "INSTA STEAL, GOD MODE and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Best FoxName Hub | Auto Steal and More",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/Fn-stealanegg.lua\"))()",
+    "features": "Auto Steal and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script ZeroPoint Hub | INSTANT STEAL, AUTO STEAL, ANTI HIT",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/JaxRol/ZeroPoint/refs/heads/main/KeySystem\"))()",
+    "features": "INSTANT STEAL, AUTO STEAL, ANTI HIT",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Rift Hub | Auto Steal Titan Temple Eggs, God Mode, Instant Steal Egg",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://rifton.top/loader.lua\"))()",
+    "features": "Auto Steal Titan Temple Eggs, God Mode, Instant Steal Egg",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script CloverHub | STEAL ALL AREAS, AUTO EVENT and More",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Ryuun0x/Clover/main/main.lua\"))()",
+    "features": "STEAL ALL AREAS, AUTO EVENT and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script ToolBox Hub | Auto Steal Egg, God Mode, Instant Steal, Auto Bloom Event",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Abdullahking20/loader-lua/main/loader\"))()",
+    "features": "Auto Steal Egg, God Mode, Instant Steal, Auto Bloom Event",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Pig Hub | Auto Steal Eggs, Auto Sell, Egg ESP, Auto Upgrade Base",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/mopsscript7-gif/steal-an-egg/refs/heads/main/script.lua\"))()",
+    "features": "Auto Steal Eggs, Auto Sell, Egg ESP, Auto Upgrade Base",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Ovei Hub | AUTO STEAL, AUTO HATCH, AUTO PICKUP, AUTO SELL",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.jnkie.com/api/v1/luascripts/public/f0b3ce85f588800ae7e46415fc4dd79ff2b0d09c9b6a8e19cea8a67b47f1bcbd/download\"))()",
+    "features": "AUTO STEAL, AUTO HATCH, AUTO PICKUP, AUTO SELL",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Keyless | INSTANT STEAL, GUARD FREEZE, ANTI KICK, PET PREDICTION, GOD MODE",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/hub-ouroboros-hub.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/JaxRol/ZeroPoint/refs/heads/main/KeySystem\"))()",
+    "features": "INSTANT STEAL, GUARD FREEZE, ANTI KICK, PET PREDICTION, GOD MODE",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script SolixHub | GODMODE, Instant Steal, Anti Hit, Auto Farm, Weather Prediction",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://solixhub.com/loader\"))()",
+    "features": "GODMODE, Instant Steal, Anti Hit, Auto Farm, Weather Prediction",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script ChronixHub | AUTO FARM, AUTO HATCH, AUTO PICKUP, AUTO SELL",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/SmokeTY/Hidden-Scripts/main/Chronix%20Hub\"))()",
+    "features": "AUTO FARM, AUTO HATCH, AUTO PICKUP, AUTO SELL",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script AJJANS Hub | PET SPAWNER, PET SIZE SELECTOR, MUTATION SELECTOR, SPAWN ALL PETS",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v4/loaders/359e97f8618e9008afe5f496184ebb7c.lua\"))()",
+    "features": "PET SPAWNER, PET SIZE SELECTOR, MUTATION SELECTOR, SPAWN ALL PETS",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Speed X Hub - Auto Steal and More",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/roblox-steal-an-egg.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua\", true))()",
+    "features": "Auto Steal and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Steal An Egg Script Ouroboros Hub | AUTO STEAL, AUTO HATCH, AUTO UPGRADE TREADMILL (NO KEY)",
+    "game": "Steal An Egg",
+    "icon": "/assets/icons/hub-ouroboros-hub.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua\"))()",
+    "features": "AUTO STEAL, AUTO HATCH, AUTO UPGRADE TREADMILL (NO KEY)",
+    "keyRequired": false
+  },
+  {
+    "title": "L - menu · LShift+U - uninject",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "local Players = game:GetService(\"Players\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal TweenService = game:GetService(\"TweenService\")\nlocal UserInputService = game:GetService(\"UserInputService\")\nlocal RunService = game:GetService(\"RunService\")\nlocal Lighting = game:GetService(\"Lighting\")\nlocal HttpService = game:GetService(\"HttpService\")\nlocal Stats = game:GetService(\"Stats\")\n\nlocal LP = Players.LocalPlayer\nif not LP then\n    repeat\n        task.wait(0.1)\n        LP = Players.LocalPlayer\n    until LP ~= nil\nend\nlocal PlayerGui = LP:WaitForChild(\"PlayerGui\")\n\nprint(\"[BestClient] v10.13 · loading...\")\n\nlocal M = {\n    alive = true,\n    guis = {},\n    conns = {},\n    painters = {},\n    themeListeners = {},\n    binds = {},\n}\n\nlocal VERSION = {}\nlocal WHITE = Color3.fromRGB(255, 255, 255)\n\nlocal function track(conn)\n    table.insert(M.conns, conn)\n    return conn\nend\n\nlocal function new(class, props, parent)\n    local inst = Instance.new(class)\n    if props then\n        for k, v in pairs(props) do\n            inst[k] = v\n        end\n    end\n    if parent then\n        inst.Parent = parent\n    end\n    return inst\nend\n\nlocal function corner(inst, radius)\n    local c = Instance.new(\"UICorner\")\n    c.CornerRadius = UDim.new(0, radius)\n    c.Parent = inst\n    return c\nend\n\nlocal function addStroke(inst, color, thickness, transparency)\n    local s = Instance.new(\"UIStroke\")\n    s.Color = color\n    s.Thickness = thickness or 1\n    s.Transparency = transparency or 0\n    s.Parent = inst\n    return s\nend\n\nlocal function executor(name)\n    local ok, fn = pcall(function()\n        return rawget(_G, name)\n    end)\n    if ok and type(fn) == \"function\" then\n        return fn\n    end\n    ok, fn = pcall(function()\n        return getgenv()[name]\n    end)\n    if ok and type(fn) == \"function\" then\n        return fn\n    end\n    return nil\nend\n\n-- ═══ UNINJECT ПРЕДЫДУЩЕЙ КОПИИ ═══\nif _G.__BESTCLIENT_UNINJECT then\n    pcall(_G.__BESTCLIENT_UNINJECT)\nend\n_G.__BestClientVersion = VERSION\n\n-- ═══ СТАРЫЙ МУСОР ═══\ndo\n    local restore = executor(\"restorefunction\")\n    if _G.__AUTOMATION_SILENT_OLD and restore then\n        pcall(function()\n            restore(_G.__AUTOMATION_SILENT_OLD)\n        end)\n    end\n    _G.__AUTOMATION_SILENT_OLD = nil\n    _G.__AUTOMATION_OLD_DRAWINGS = nil\n\n    for _, obj in pairs(workspace:GetDescendants()) do\n        if obj:IsA(\"Highlight\") and (obj.Name:match(\"^ESP_\") or obj.Name == \"GunESP\") then\n            pcall(function()\n                obj:Destroy()\n            end)\n        end\n    end\n    for _, name in ipairs({ \"BestClientMenu\", \"BestClientNotifs\", \"BestClientWatermark\",\n                            \"BestClientAdmin\", \"BestClientESP\", \"AutomationMenu\", \"AutomationNotifs\" }) do\n        local old = PlayerGui:FindFirstChild(name)\n        if old then\n            old:Destroy()\n        end\n    end\n    for _, obj in pairs(workspace:GetChildren()) do\n        if obj.Name == \"HB_Real\" or obj.Name:match(\"^HB_\") then\n            obj:Destroy()\n        end\n    end\nend\n\n-- ═══ CONFIG ═══\nM.Config = {\n    theme = \"Midnight\",\n    activeTab = \"esp\",\n    killauraMode = \"medium\",\n    language = \"ru\",\n    toggles = {},\n    sliders = {},\n    binds = {},\n    windowPos = nil,\n    watermark = { visible = true, pos = nil },\n}\n\ndo\n    local FILE = \"best_client_v1.json\"\n    local writefile = executor(\"writefile\")\n    local readfile = executor(\"readfile\")\n    local isfile = executor(\"isfile\")\n    local delfile = executor(\"delfile\")\n\n    function M.saveConfig()\n        if not writefile then\n            return\n        end\n        local ok, encoded = pcall(function()\n            return HttpService:JSONEncode(M.Config)\n        end)\n        if ok and type(encoded) == \"string\" then\n            pcall(writefile, FILE, encoded)\n        end\n    end\n\n    local scheduled = false\n    function M.saveDebounced()\n        if scheduled then\n            return\n        end\n        scheduled = true\n        task.delay(0.35, function()\n            scheduled = false\n            M.saveConfig()\n        end)\n    end\n\n    function M.deleteConfig()\n        if delfile then\n            pcall(delfile, FILE)\n        elseif writefile then\n            pcall(writefile, FILE, \"{}\")\n        end\n    end\n\n    if readfile and isfile then\n        local okExists, exists = pcall(isfile, FILE)\n        if okExists and exists then\n            local okRead, content = pcall(readfile, FILE)\n            if okRead and type(content) == \"string\" then\n                local okDecode, data = pcall(function()\n                    return HttpService:JSONDecode(content)\n                end)\n                if okDecode and type(data) == \"table\" then\n                    local C = M.Config\n                    if type(data.theme) == \"string\" then C.theme = data.theme end\n                    if type(data.activeTab) == \"string\" then C.activeTab = data.activeTab end\n                    if type(data.killauraMode) == \"string\" then C.killauraMode = data.killauraMode end\n                    if type(data.language) == \"string\" then C.language = data.language end\n                    if type(data.toggles) == \"table\" then C.toggles = data.toggles end\n                    if type(data.sliders) == \"table\" then C.sliders = data.sliders end\n                    if type(data.binds) == \"table\" then C.binds = data.binds end\n                    if type(data.windowPos) == \"table\" then C.windowPos = data.windowPos end\n                    if type(data.watermark) == \"table\" then\n                        if type(data.watermark.visible) == \"boolean\" then\n                            C.watermark.visible = data.watermark.visible\n                        end\n                        if type(data.watermark.pos) == \"table\" then\n                            C.watermark.pos = data.watermark.pos\n                        end\n                    end\n                end\n            end\n        end\n    end\nend\n\n-- ═══ ТЕМЫ ═══\ndo\n    local Themes = {\n        Midnight = { title = \"Полночь\", preview = Color3.fromRGB(140, 110, 255),\n            bg = Color3.fromRGB(14, 14, 20), bgDeep = Color3.fromRGB(9, 9, 14), bgLight = Color3.fromRGB(20, 20, 28),\n            card = Color3.fromRGB(24, 24, 34), cardHover = Color3.fromRGB(34, 34, 46), cardActive = Color3.fromRGB(45, 40, 70),\n            accent = Color3.fromRGB(140, 110, 255), accentSoft = Color3.fromRGB(180, 155, 255), accentDim = Color3.fromRGB(90, 70, 170),\n            text = Color3.fromRGB(240, 240, 250), textDim = Color3.fromRGB(170, 170, 190), textMuted = Color3.fromRGB(105, 105, 125),\n            success = Color3.fromRGB(85, 220, 130), danger = Color3.fromRGB(255, 90, 110), warning = Color3.fromRGB(255, 200, 80),\n            info = Color3.fromRGB(90, 175, 255), stroke = Color3.fromRGB(45, 45, 60), strokeSoft = Color3.fromRGB(32, 32, 45) },\n        Sakura = { title = \"Сакура\", preview = Color3.fromRGB(240, 130, 180),\n            bg = Color3.fromRGB(22, 14, 20), bgDeep = Color3.fromRGB(16, 10, 14), bgLight = Color3.fromRGB(30, 20, 28),\n            card = Color3.fromRGB(36, 24, 34), cardHover = Color3.fromRGB(48, 34, 44), cardActive = Color3.fromRGB(65, 40, 58),\n            accent = Color3.fromRGB(240, 130, 180), accentSoft = Color3.fromRGB(255, 175, 210), accentDim = Color3.fromRGB(160, 80, 120),\n            text = Color3.fromRGB(255, 240, 250), textDim = Color3.fromRGB(220, 180, 200), textMuted = Color3.fromRGB(145, 110, 130),\n            success = Color3.fromRGB(120, 230, 160), danger = Color3.fromRGB(255, 100, 130), warning = Color3.fromRGB(255, 200, 120),\n            info = Color3.fromRGB(130, 180, 255), stroke = Color3.fromRGB(60, 40, 52), strokeSoft = Color3.fromRGB(42, 28, 38) },\n        Cyber = { title = \"Киберпанк\", preview = Color3.fromRGB(0, 240, 255),\n            bg = Color3.fromRGB(8, 12, 20), bgDeep = Color3.fromRGB(4, 6, 12), bgLight = Color3.fromRGB(12, 18, 28),\n            card = Color3.fromRGB(16, 24, 36), cardHover = Color3.fromRGB(22, 34, 48), cardActive = Color3.fromRGB(0, 50, 70),\n            accent = Color3.fromRGB(0, 240, 255), accentSoft = Color3.fromRGB(100, 255, 255), accentDim = Color3.fromRGB(0, 140, 160),\n            text = Color3.fromRGB(230, 250, 255), textDim = Color3.fromRGB(140, 200, 220), textMuted = Color3.fromRGB(70, 110, 130),\n            success = Color3.fromRGB(0, 255, 140), danger = Color3.fromRGB(255, 60, 120), warning = Color3.fromRGB(255, 220, 60),\n            info = Color3.fromRGB(0, 200, 255), stroke = Color3.fromRGB(0, 80, 100), strokeSoft = Color3.fromRGB(0, 45, 60) },\n        Blood = { title = \"Кровь\", preview = Color3.fromRGB(220, 50, 60),\n            bg = Color3.fromRGB(18, 10, 12), bgDeep = Color3.fromRGB(12, 6, 8), bgLight = Color3.fromRGB(24, 14, 18),\n            card = Color3.fromRGB(32, 18, 22), cardHover = Color3.fromRGB(44, 26, 32), cardActive = Color3.fromRGB(60, 30, 40),\n            accent = Color3.fromRGB(220, 50, 60), accentSoft = Color3.fromRGB(255, 100, 110), accentDim = Color3.fromRGB(140, 30, 40),\n            text = Color3.fromRGB(255, 235, 240), textDim = Color3.fromRGB(220, 170, 180), textMuted = Color3.fromRGB(140, 100, 110),\n            success = Color3.fromRGB(120, 230, 150), danger = Color3.fromRGB(255, 60, 80), warning = Color3.fromRGB(255, 200, 100),\n            info = Color3.fromRGB(140, 180, 255), stroke = Color3.fromRGB(55, 30, 36), strokeSoft = Color3.fromRGB(40, 22, 28) },\n        Ocean = { title = \"Океан\", preview = Color3.fromRGB(60, 180, 240),\n            bg = Color3.fromRGB(10, 20, 30), bgDeep = Color3.fromRGB(6, 14, 22), bgLight = Color3.fromRGB(14, 28, 42),\n            card = Color3.fromRGB(18, 32, 46), cardHover = Color3.fromRGB(26, 44, 60), cardActive = Color3.fromRGB(36, 60, 80),\n            accent = Color3.fromRGB(60, 180, 240), accentSoft = Color3.fromRGB(120, 215, 255), accentDim = Color3.fromRGB(40, 120, 170),\n            text = Color3.fromRGB(230, 245, 255), textDim = Color3.fromRGB(160, 200, 225), textMuted = Color3.fromRGB(100, 140, 165),\n            success = Color3.fromRGB(100, 220, 150), danger = Color3.fromRGB(255, 90, 110), warning = Color3.fromRGB(255, 200, 90),\n            info = Color3.fromRGB(120, 200, 255), stroke = Color3.fromRGB(40, 60, 80), strokeSoft = Color3.fromRGB(28, 44, 60) },\n        Forest = { title = \"Лес\", preview = Color3.fromRGB(90, 200, 120),\n            bg = Color3.fromRGB(10, 20, 14), bgDeep = Color3.fromRGB(6, 14, 10), bgLight = Color3.fromRGB(14, 28, 20),\n            card = Color3.fromRGB(20, 34, 26), cardHover = Color3.fromRGB(28, 46, 36), cardActive = Color3.fromRGB(40, 64, 50),\n            accent = Color3.fromRGB(90, 200, 120), accentSoft = Color3.fromRGB(140, 230, 160), accentDim = Color3.fromRGB(50, 140, 80),\n            text = Color3.fromRGB(230, 250, 235), textDim = Color3.fromRGB(170, 210, 180), textMuted = Color3.fromRGB(110, 150, 120),\n            success = Color3.fromRGB(110, 230, 140), danger = Color3.fromRGB(255, 90, 110), warning = Color3.fromRGB(255, 210, 90),\n            info = Color3.fromRGB(120, 180, 240), stroke = Color3.fromRGB(36, 56, 42), strokeSoft = Color3.fromRGB(24, 40, 30) },\n        Matrix = { title = \"Матрица\", preview = Color3.fromRGB(0, 255, 80),\n            bg = Color3.fromRGB(4, 10, 4), bgDeep = Color3.fromRGB(2, 6, 2), bgLight = Color3.fromRGB(8, 16, 8),\n            card = Color3.fromRGB(12, 26, 12), cardHover = Color3.fromRGB(18, 36, 18), cardActive = Color3.fromRGB(24, 48, 24),\n            accent = Color3.fromRGB(0, 255, 80), accentSoft = Color3.fromRGB(100, 255, 150), accentDim = Color3.fromRGB(0, 150, 50),\n            text = Color3.fromRGB(210, 255, 215), textDim = Color3.fromRGB(140, 200, 145), textMuted = Color3.fromRGB(70, 120, 75),\n            success = Color3.fromRGB(0, 255, 100), danger = Color3.fromRGB(255, 60, 60), warning = Color3.fromRGB(255, 220, 0),\n            info = Color3.fromRGB(0, 200, 255), stroke = Color3.fromRGB(20, 50, 20), strokeSoft = Color3.fromRGB(14, 32, 14) },\n        Mono = { title = \"Моно\", preview = Color3.fromRGB(200, 200, 210),\n            bg = Color3.fromRGB(16, 16, 18), bgDeep = Color3.fromRGB(10, 10, 12), bgLight = Color3.fromRGB(22, 22, 24),\n            card = Color3.fromRGB(26, 26, 30), cardHover = Color3.fromRGB(36, 36, 42), cardActive = Color3.fromRGB(50, 50, 58),\n            accent = Color3.fromRGB(200, 200, 210), accentSoft = Color3.fromRGB(230, 230, 240), accentDim = Color3.fromRGB(140, 140, 150),\n            text = Color3.fromRGB(240, 240, 245), textDim = Color3.fromRGB(170, 170, 180), textMuted = Color3.fromRGB(110, 110, 120),\n            success = Color3.fromRGB(180, 220, 180), danger = Color3.fromRGB(220, 140, 140), warning = Color3.fromRGB(230, 210, 140),\n            info = Color3.fromRGB(170, 200, 230), stroke = Color3.fromRGB(50, 50, 56), strokeSoft = Color3.fromRGB(32, 32, 38) },\n    }\n\n    local ORDER = { \"Midnight\", \"Sakura\", \"Cyber\", \"Blood\", \"Ocean\", \"Forest\", \"Matrix\", \"Mono\" }\n    local current = M.Config.theme\n    if not Themes[current] then\n        current = \"Midnight\"\n    end\n    M.Config.theme = current\n\n    M.Themes = Themes\n    M.ThemeOrder = ORDER\n    M.Theme = Themes[current]\n\n    function M.paint(inst, prop, role)\n        table.insert(M.painters, { inst = inst, prop = prop, role = role })\n    end\n\n    function M.onTheme(fn)\n        table.insert(M.themeListeners, fn)\n    end\n\n    function M.setTheme(name)\n        local t = Themes[name]\n        if not t then\n            return\n        end\n        current = name\n        M.Theme = t\n        M.Config.theme = name\n        M.saveConfig()\n        for _, entry in ipairs(M.painters) do\n            if entry.inst and entry.inst.Parent then\n                pcall(function()\n                    entry.inst[entry.prop] = t[entry.role]\n                end)\n            end\n        end\n        for _, fn in ipairs(M.themeListeners) do\n            pcall(fn, t)\n        end\n    end\nend\n\n-- ═══ ЛОКАЛИЗАЦИЯ (RU / EN) ═══\ndo\n    local PACKS = {\n        ru = {\n            logo = \"BEST CLIENT\",\n            tagline = \"v10.13 · community edition\",\n            role_unknown = \"НЕИЗВЕСТНО\",\n\n            tab_visual = \"Визуал\", tab_combat = \"Бой\", tab_hvh = \"HVH\",\n            tab_farm = \"Фарм\", tab_move = \"Движение\", tab_util = \"Прочее\",\n            tab_look = \"Вид\", tab_dev = \"DEV\",\n\n            sub_visual = \"ESP, никнеймы, оружие\",\n            sub_combat = \"KillAura и режимы\",\n            sub_hvh = \"Хитбоксы и массовые действия\",\n            sub_farm = \"Авто-сбор монет\",\n            sub_move = \"Fly, noclip, скорость\",\n            sub_util = \"Утилиты, конфиг и игроки\",\n            sub_look = \"Темы и язык интерфейса\",\n            sub_dev = \"Команда проекта\",\n\n            sec_players = \"ESP игроков\",\n            sec_gun = \"Gun ESP\",\n            sec_modes = \"Режим KillAura\",\n            sec_aura = \"Kill Aura\",\n            sec_hitbox = \"Хитбокс (HVH)\",\n            sec_actions = \"Действия\",\n            sec_coins = \"Фарм монет\",\n            sec_move = \"Movement\",\n            sec_wm = \"Watermark\",\n            sec_util = \"Утилиты\",\n            sec_config = \"Конфиг\",\n            sec_players_list = \"Игроки\",\n            sec_themes = \"Темы оформления\",\n            sec_lang = \"Язык интерфейса\",\n            sec_dev = \"Разработчик\",\n            sec_beta = \"Бета-тестеры\",\n            sec_about = \"О проекте\",\n\n            esp_players = \"Player ESP\",\n            esp_players_d = \"Подсветка игроков по роли\",\n            esp_tags = \"Name Tags\",\n            esp_tags_d = \"Имя, HP и роль над головой\",\n            gun_esp = \"Gun ESP\",\n            gun_esp_d = \"Подсветка выпавших пистолетов\",\n            tp_gun = \"TP к пистолету и назад\",\n            auto_grab = \"Auto Grab Gun\",\n            auto_grab_d = \"Авто-TP к пистолету\",\n            killaura = \"KILL AURA\",\n            killaura_d = \"Sheriff — аим, Murderer — флай + удар\",\n            kill_cd = \"Cooldown (сек)\",\n            aim_smooth = \"Aim Smoothness\",\n            fly_speed = \"Murderer Fly Speed\",\n            hitbox_size = \"Hitbox Size (1-20x)\",\n            remove_hb = \"Убрать хитбоксы\",\n            diagnostic = \"ДИАГНОСТИКА (F9)\",\n            autofarm = \"Auto Farm Coins\",\n            autofarm_d = \"Лимит попыток — слайдером ниже\",\n            attempts = \"Попыток на монету\",\n            reset_coins = \"Сбросить память монет\",\n            farm_info = \"ПОПЫТОК НА МОНЕТУ: %d.\\nЕсли после последней попытки монета всё ещё существует —\\nона помечается как плохая. Сброс — кнопкой выше.\",\n            fly = \"Fly (WASD)\",\n            fly_d = \"Полёт камерой, Space / Ctrl\",\n            noclip = \"Noclip\",\n            noclip_d = \"Проход сквозь стены\",\n            walkspeed = \"WalkSpeed\",\n            walkspeed_d = \"Своя скорость ходьбы\",\n            speed_value = \"Speed Value\",\n            watermark = \"Watermark\",\n            watermark_d = \"FPS, пинг и режим\",\n            wm_reset = \"Сбросить позицию watermark\",\n            fullbright = \"Fullbright\",\n            fullbright_d = \"Яркое освещение\",\n            refresh_roles = \"Обновить роли\",\n            fix_col = \"Починить коллизии\",\n            save_cfg = \"Сохранить конфиг\",\n            reset_cfg = \"Сбросить настройки\",\n            uninject = \"UNINJECT (конфиг сохранить)\",\n            uninject_clear = \"UNINJECT + очистить конфиг\",\n            mode_legit = \"LEGIT\",\n            mode_medium = \"MEDIUM\",\n            mode_hvh = \"HVH\",\n            mode_desc = \"legit — честно · medium — баланс · hvh — хардкор\",\n            theme_pick = \"Клик по карточке — применить тему\",\n            lang_hint = \"Язык применяется сразу ко всему меню\",\n            apply = \"Применить\",\n            about_text = \"3 режима KillAura · авто-фарм монет · ESP · KillAura\\nАдмин-панель (O) · темы и языки\\nСделано для комьюнити\",\n            copy_hint = \"Клик по карточке — скопировать ник\",\n            role_lead = \"Главный разработчик\",\n            role_beta = \"Бета-тестер\",\n            press_key = \"Нажмите клавишу...\",\n            bind_cancel = \"ESC — отмена · Backspace — удалить\",\n            yes = \"да\",\n            no = \"нет\",\n            on = \"вкл\",\n            off = \"выкл\",\n            loaded = \"BEST CLIENT v10.13 · загружено\",\n            theme_toast = \"Тема: %s\",\n            lang_toast = \"Язык: Русский\",\n            roles_updated = \"Роли обновлены\",\n            cfg_saved = \"Конфиг сохранён\",\n            cfg_reset = \"Настройки сброшены (перезапусти)\",\n            wm_reset_toast = \"Watermark сброшен\",\n            coins_reset = \"Память монет сброшена\",\n            hb_removed = \"Хитбоксы убраны\",\n            no_weapon = \"KillAura ON · но оружия нет\",\n            diag_msg = \"Вывод в консоль (F9)\",\n            cols_fixed = \"Коллизии восстановлены\",\n            sec_aim = \"KILLAURA · SHERIFF\",\n            sec_melee = \"KILLAURA · MURDERER\",\n            aim_camera = \"Camera Aimbot\",\n            aim_camera_d = \"Плавно доводит камеру на цель\",\n            aim_shoot = \"Auto Shoot · Camera\",\n            aim_shoot_d = \"Стрелять, когда камера наведена\",\n            cross_enable = \"Crosshair Aimbot\",\n            cross_enable_d = \"Двигает прицел (курсор), не камеру\",\n            cross_shoot = \"Auto Shoot · Crosshair\",\n            cross_shoot_d = \"Стрелять, когда прицел на цели\",\n            cross_tol = \"Порог прицела (px)\",\n            no_mousemove = \"mousemoverel не поддерживается — прицел не двигается\",\n            aim_only = \"Только мурдер\",\n            aim_only_d = \"Стрелять только в мурдера\",\n            aim_wall = \"Wall Check\",\n            aim_wall_d = \"Не стрелять через стены\",\n            aim_fov = \"FOV (градусы)\",\n            aim_cd = \"Cooldown выстрела\",\n            aim_pred = \"Prediction (сек)\",\n            melee_enable = \"Murderer Aura\",\n            melee_enable_d = \"Легит: прицел + хитбокс, без ТП и полёта\",\n            melee_aim = \"Наводить прицел\",\n            melee_aim_d = \"Двигать курсор на цель\",\n            melee_range = \"Range (дистанция удара)\",\n            melee_cd = \"Задержка удара\",\n            melee_tp = \"Teleport\",\n            melee_tp_d = \"Подлетать к цели\",\n            no_gun = \"KillAura · нет пистолета\",\n            mode_toast = \"KillAura · %s\",\n        },\n        en = {\n            logo = \"BEST CLIENT\",\n            tagline = \"v10.13 · community edition\",\n            role_unknown = \"UNKNOWN\",\n\n            tab_visual = \"Visual\", tab_combat = \"Combat\", tab_hvh = \"HVH\",\n            tab_farm = \"Farm\", tab_move = \"Movement\", tab_util = \"Misc\",\n            tab_look = \"Look\", tab_dev = \"DEV\",\n\n            sub_visual = \"ESP, nametags, weapons\",\n            sub_combat = \"KillAura and modes\",\n            sub_hvh = \"Hitboxes and mass actions\",\n            sub_farm = \"Automatic coin farming\",\n            sub_move = \"Fly, noclip, speed\",\n            sub_util = \"Utilities, config and players\",\n            sub_look = \"Themes and interface language\",\n            sub_dev = \"Project team\",\n\n            sec_players = \"Player ESP\",\n            sec_gun = \"Gun ESP\",\n            sec_modes = \"KillAura mode\",\n            sec_aura = \"Kill Aura\",\n            sec_hitbox = \"Hitbox (HVH)\",\n            sec_actions = \"Actions\",\n            sec_coins = \"Coin farm\",\n            sec_move = \"Movement\",\n            sec_wm = \"Watermark\",\n            sec_util = \"Utilities\",\n            sec_config = \"Config\",\n            sec_players_list = \"Players\",\n            sec_themes = \"Interface themes\",\n            sec_lang = \"Interface language\",\n            sec_dev = \"Developer\",\n            sec_beta = \"Beta testers\",\n            sec_about = \"About\",\n\n            esp_players = \"Player ESP\",\n            esp_players_d = \"Highlight players by role\",\n            esp_tags = \"Name Tags\",\n            esp_tags_d = \"Name, HP and role above head\",\n            gun_esp = \"Gun ESP\",\n            gun_esp_d = \"Highlight dropped guns\",\n            tp_gun = \"TP to gun and back\",\n            auto_grab = \"Auto Grab Gun\",\n            auto_grab_d = \"Auto-TP to a gun\",\n            killaura = \"KILL AURA\",\n            killaura_d = \"Sheriff — aim, Murderer — fly + stab\",\n            kill_cd = \"Cooldown (sec)\",\n            aim_smooth = \"Aim Smoothness\",\n            fly_speed = \"Murderer Fly Speed\",\n            hitbox_size = \"Hitbox Size (1-20x)\",\n            remove_hb = \"Remove hitboxes\",\n            diagnostic = \"DIAGNOSTICS (F9)\",\n            autofarm = \"Auto Farm Coins\",\n            autofarm_d = \"Attempt limit — slider below\",\n            attempts = \"Attempts per coin\",\n            reset_coins = \"Reset coin memory\",\n            farm_info = \"ATTEMPTS PER COIN: %d.\\nIf the coin still exists after the last attempt,\\nit is marked as bad. Reset — button above.\",\n            fly = \"Fly (WASD)\",\n            fly_d = \"Camera flight, Space / Ctrl\",\n            noclip = \"Noclip\",\n            noclip_d = \"Walk through walls\",\n            walkspeed = \"WalkSpeed\",\n            walkspeed_d = \"Custom walking speed\",\n            speed_value = \"Speed Value\",\n            watermark = \"Watermark\",\n            watermark_d = \"FPS, ping and mode\",\n            wm_reset = \"Reset watermark position\",\n            fullbright = \"Fullbright\",\n            fullbright_d = \"Bright lighting\",\n            refresh_roles = \"Refresh roles\",\n            fix_col = \"Fix collisions\",\n            save_cfg = \"Save config\",\n            reset_cfg = \"Reset settings\",\n            uninject = \"UNINJECT (keep config)\",\n            uninject_clear = \"UNINJECT + clear config\",\n            mode_legit = \"LEGIT\",\n            mode_medium = \"MEDIUM\",\n            mode_hvh = \"HVH\",\n            mode_desc = \"legit — fair · medium — balanced · hvh — rage\",\n            theme_pick = \"Click a card to apply the theme\",\n            lang_hint = \"Language applies to the whole menu instantly\",\n            apply = \"Apply\",\n            about_text = \"3 KillAura modes · auto coin farm · ESP · KillAura\\nAdmin panel (O) · themes and languages\\nMade for the community\",\n            copy_hint = \"Click a card to copy the nickname\",\n            role_lead = \"Lead Developer\",\n            role_beta = \"Beta Tester\",\n            press_key = \"Press a key...\",\n            bind_cancel = \"ESC — cancel · Backspace — clear\",\n            yes = \"yes\",\n            no = \"no\",\n            on = \"on\",\n            off = \"off\",\n            loaded = \"BEST CLIENT v10.13 · loaded\",\n            theme_toast = \"Theme: %s\",\n            lang_toast = \"Language: English\",\n            roles_updated = \"Roles refreshed\",\n            cfg_saved = \"Config saved\",\n            cfg_reset = \"Settings reset (restart)\",\n            wm_reset_toast = \"Watermark reset\",\n            coins_reset = \"Coin memory reset\",\n            hb_removed = \"Hitboxes removed\",\n            no_weapon = \"KillAura ON · no weapon\",\n            diag_msg = \"Printed to console (F9)\",\n            cols_fixed = \"Collisions restored\",\n            sec_aim = \"KILLAURA · SHERIFF\",\n            sec_melee = \"KILLAURA · MURDERER\",\n            aim_camera = \"Camera Aimbot\",\n            aim_camera_d = \"Smoothly rotates the camera to the target\",\n            aim_shoot = \"Auto Shoot · Camera\",\n            aim_shoot_d = \"Shoot when the camera is aimed\",\n            cross_enable = \"Crosshair Aimbot\",\n            cross_enable_d = \"Moves the crosshair (cursor), not the camera\",\n            cross_shoot = \"Auto Shoot · Crosshair\",\n            cross_shoot_d = \"Shoot when the crosshair is on target\",\n            cross_tol = \"Crosshair tolerance (px)\",\n            no_mousemove = \"mousemoverel is not supported — crosshair can't move\",\n            aim_only = \"Murderer only\",\n            aim_only_d = \"Shoot the murderer only\",\n            aim_wall = \"Wall Check\",\n            aim_wall_d = \"Don't shoot through walls\",\n            aim_fov = \"FOV (degrees)\",\n            aim_cd = \"Shot cooldown\",\n            aim_pred = \"Prediction (sec)\",\n            melee_enable = \"Murderer Aura\",\n            melee_enable_d = \"Legit: crosshair + hitbox, no TP/fly\",\n            melee_aim = \"Aim crosshair\",\n            melee_aim_d = \"Move the cursor onto the target\",\n            melee_range = \"Range (stab distance)\",\n            melee_cd = \"Stab delay\",\n            melee_tp = \"Teleport\",\n            melee_tp_d = \"Fly to the target\",\n            no_gun = \"KillAura · no gun\",\n            mode_toast = \"KillAura · %s\",\n        },\n    }\n\n    local listeners = {}\n    local current = M.Config.language\n    if current ~= \"en\" then\n        current = \"ru\"\n    end\n    M.Config.language = current\n\n    function M.t(key, ...)\n        local pack = PACKS[current] or PACKS.ru\n        local value = pack[key]\n        if value == nil then\n            value = PACKS.ru[key] or tostring(key)\n        end\n        if select(\"#\", ...) > 0 then\n            local ok, formatted = pcall(string.format, value, ...)\n            if ok then\n                return formatted\n            end\n        end\n        return value\n    end\n\n    function M.getLang()\n        return current\n    end\n\n    function M.onLang(fn)\n        table.insert(listeners, fn)\n    end\n\n    function M.setLang(code)\n        if code ~= \"ru\" and code ~= \"en\" then\n            return\n        end\n        if code == current then\n            return\n        end\n        current = code\n        M.Config.language = code\n        M.saveConfig()\n        for _, fn in ipairs(listeners) do\n            pcall(fn, code)\n        end\n    end\nend\n\n-- ═══ КЛЮЧИ РОЛЕЙ ═══\nlocal SHERIFF_KEYS = { \"gun\", \"revolver\", \"pistol\", \"firearm\" }\nlocal MURDERER_KEYS = { \"knife\", \"bat\", \"axe\", \"chainsaw\", \"sword\", \"cleaver\", \"machete\",\n    \"scythe\", \"pickaxe\", \"wrench\", \"crowbar\", \"screwdriver\", \"hammer\", \"sabre\", \"spiked\", \"dagger\" }\n\nlocal function containsAny(str, list)\n    local lower = string.lower(str)\n    for _, key in ipairs(list) do\n        if string.find(lower, key, 1, true) then\n            return true\n        end\n    end\n    return false\nend\n\n-- ═══ РОЛИ ═══\ndo\n    local cache = {}\n    local lastFetch = 0\n\n    M.roleCache = cache\n    M.ROLE_COLORS = {\n        Murderer = Color3.fromRGB(255, 80, 100),\n        Sheriff = Color3.fromRGB(80, 155, 255),\n        Innocent %2",
+    "features": "menu · LShift+U - uninject",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Pulse Hub | Collect Candy, Kill Aura and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/PulseZax/Loader/main/.lua\"))()",
+    "features": "Collect Candy, Kill Aura and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script YalaHub (NO KEY)",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastefy.app/UtmNA4ps/raw\", true))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Dexa Hub | AutoFarm, Aimbot, ESP, Exclusion, Touch Fling",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/NihalIsDumb/dexahub-mm2-panel1/refs/heads/main/dexahub-mm2-panel1.lua\"))()",
+    "features": "AutoFarm, Aimbot, ESP, Exclusion, Touch Fling",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Mario Hub | Silent Aim, Auto Kill All, Auto Shoot Murder, Auto Grab Gun",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/loader.lua\"))()",
+    "features": "Silent Aim, Auto Kill All, Auto Shoot Murder, Auto Grab Gun",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Fable Hub | Auto Farm, ESP, Silent Aim",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Havickzi/Rocket-script/refs/heads/main/Fable_Hub.lua\"))()",
+    "features": "Auto Farm, ESP, Silent Aim",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Kazz Hub | Silent Aim, Wallbang, ESP, SKY and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.jnkie.com/api/v1/loaders/public/353accd2d41a5a30c879705a8ff47926fab2c8b7d7baf34d31c0522b8c6c0a41/download\"))()",
+    "features": "Silent Aim, Wallbang, ESP, SKY and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Kairis Hub | Auto Farm, Aimlock, ESP Players, Fling Players",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Kairis-Scripts/MM2/refs/heads/main/KairisHub\"))()",
+    "features": "Auto Farm, Aimlock, ESP Players, Fling Players",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script BROOD Hub - Auto Shot, Auto Throw, Kill All, ESP and More Farm",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/madundung863-a11y/Loaders-BroodScript/refs/heads/main/MM2%20script\"))()",
+    "features": "Auto Shot, Auto Throw, Kill All, ESP and More Farm",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Heartagram Hub - Auto Farm, Kill All, ESP, Kill Aura",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tontov/NewMM2/refs/heads/main/SCRIPT\"))()",
+    "features": "Auto Farm, Kill All, ESP, Kill Aura",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Summer ToraHub - Collect Coins",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/gumanba/Scripts/main/mm2\"))()",
+    "features": "Collect Coins",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script GUI - Summer Farm, Visuals",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://cdn.project-reverse.org/mm2_summer_farm.luau\"))();",
+    "features": "Summer Farm, Visuals",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Slix Hub | SUMMER, AUTOFARM, NEW UPDATE, ESP",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Azura83/Murder-Mystery-2/refs/heads/main/Script.lua\"))()",
+    "features": "SUMMER, AUTOFARM, NEW UPDATE, ESP",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Metan Hub | Silent Aim, Anti Fling, ESP, Anti Trap",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Youdfff/MetanHub/refs/heads/main/moonveil.lua\"))()",
+    "features": "Silent Aim, Anti Fling, ESP, Anti Trap",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Axon Hub GUI - Coin Farm, Auto Kill, Fast Swing, ESP and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/97c3f6db55a2cf72141537a85458e5a7.lua\"))()",
+    "features": "Coin Farm, Auto Kill, Fast Swing, ESP and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Prestige Hub - Role ESP, Kill Aura, Silent Aim, Teleport to Murderer/Sheriff",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/rombik34/PRESTIGE/refs/heads/main/prestigeMM2%20(2).lua\"))()",
+    "features": "Role ESP, Kill Aura, Silent Aim, Teleport to Murderer/Sheriff",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Best (Lumin.rest Hub) - Auto Farm, Kill Aura, ESP and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://lumin.rest/script\"))()",
+    "features": "Auto Farm, Kill Aura, ESP and More",
+    "keyRequired": false
+  },
+  {
+    "title": "KEY:KEY8e94da5c759XB",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastebin.com/raw/T9b5HSUC\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": true
+  },
+  {
+    "title": "Murder Mystery 2 Script (HoneyLua Hub) - Auto Farm XP, Auto Unbox, Visuals and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "-- .gg/n3Qwq3rggS\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/ThatSick/HoneyLua/refs/heads/main/Loader.luau\"))()",
+    "features": "Auto Farm XP, Auto Unbox, Visuals and More",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script FoxName Hub Best - Aimbot, ESP, Teleports, Farm and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/xv3gasx/Murder-Mystery-2/refs/heads/main/Release.lua\"))()",
+    "features": "Aimbot, ESP, Teleports, Farm and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script NEW Best - NoClip, Fly, ESP, Farming, Trolling",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/nickriley4567-hash/scriptv1/main/Main.lua\"))()\n\n--can get the key from the discord",
+    "features": "NoClip, Fly, ESP, Farming, Trolling",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Vertex Hub | Kill Aura, Silent Aim, Auto Shoot Murderer, Fling, ESP",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()",
+    "features": "Kill Aura, Silent Aim, Auto Shoot Murderer, Fling, ESP",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 (MM2 Roblox) Script - Auto Farm GUI 2026",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/spawnerscript/MurderMystery2/refs/heads/main/autofarm.lua\"))()",
+    "features": "Auto Farm GUI 2026",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script | Auto Shot Murderer, Aimbot, Silent Aim, Aimlock",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Azura83/Murder-Mystery-2/refs/heads/main/Script.lua\"))()",
+    "features": "Auto Shot Murderer, Aimbot, Silent Aim, Aimlock",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Roblox TravHub - ESP, Teleport, Get Gun, Auto Farm GUI",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/mm2scripthub/TravHub/refs/heads/main/MurderMystery2'))()",
+    "features": "ESP, Teleport, Get Gun, Auto Farm GUI",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script GUI NEW Revenge Hub - Various Esp, Auto Farm, Teleports",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Revenge-Hub-Roblox/Scripts/refs/heads/main/mm2.lua\", true))()",
+    "features": "Various Esp, Auto Farm, Teleports",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script 2026 Peachy Hub - Auto Farm, ESP, Aimbot, Teleport, Kill Aura",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.junkie-development.de/api/v1/luascripts/public/d37435894c260e0200d7c0cee1c5a4aea45602edb3ee1fa3c37726e2fe857ad5/download\"))()",
+    "features": "Auto Farm, ESP, Aimbot, Teleport, Kill Aura",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script New OP Auto Farm GUI + 16 Features",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/de-ishi/syl/refs/heads/main/mainLoader'))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script LuminWare - Aimbot, Silent Aim, AutoFarm, Grab Gun, Kill All & More!",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://pastefy.app/wDoZyWIp/raw'))()",
+    "features": "Aimbot, Silent Aim, AutoFarm, Grab Gun, Kill All & More!",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script 2026 Roblox - Auto Farm Speed, Infinite Tokens and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/j8nzi/project/refs/heads/main/main.lua\", true))()",
+    "features": "Auto Farm Speed, Infinite Tokens and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script GUI FourHub: ESP All, Aimbot All, Auto Farm, SpeedHack, Fly",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/jokerbiel13/FourHub/refs/heads/main/MM2.lua\",true))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "[CHRISTMAS] MM2 Script Best Thunder Hub - Collect Snow Token, Auto Farm and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Roman34296589/SnapSanixHUB/refs/heads/main/SnapSanixHUB.lua'))()",
+    "features": "Collect Snow Token, Auto Farm and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Ronix Hub - ESP, Murderer Helper, Sheriff Helper",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/fda9babd071d6b536a745774b6bc681c.lua\"))()",
+    "features": "ESP, Murderer Helper, Sheriff Helper",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Hack - Auto Farm, Auto Reset, Anti AFK",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Aura-56/MurderMystery2/refs/heads/main/Autofarm.lua\", true))()",
+    "features": "Auto Farm, Auto Reset, Anti AFK",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script New Update: Auto Farm, Auto Candies, Teleport, Anti AFK",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastefy.app/LlkfAKqJ/raw\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script VexonHub - Good ESP, Kill All, Sheriff",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub\"))()",
+    "features": "Good ESP, Kill All, Sheriff",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Horizon Hub - Auto Farm, ESP, Tp To gun, Player Settings",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastefy.app/wwfom1bX/raw\", true))()",
+    "features": "Auto Farm, ESP, Tp To gun, Player Settings",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script New Roblox - Aimbot, Teleports, AutoFarm",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastefy.app/2QUPuCOb/raw\", true))()",
+    "features": "Aimbot, Teleports, AutoFarm",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script No Key - Auto Farm, Kill Aura, ESP, Teleport and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastefy.app/XpdRjdYD/raw\", true))()",
+    "features": "Auto Farm, Kill Aura, ESP, Teleport and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Echelon Hub - ESP, Gun ESP, Remove Shoot GUI",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/echelonvanta/Scripts/refs/heads/main/Loader\"))()",
+    "features": "ESP, Gun ESP, Remove Shoot GUI",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Radeon Hub - Auto Farm, Auto Reset, ESP, Aimbot",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastebin.com/raw/v1LKQGxN\", true))()",
+    "features": "Auto Farm, Auto Reset, ESP, Aimbot",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Hack Beecon Hub - Auto Farm, ESP and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/BaconBossScript/BeeconHub/main/BeeconHub\"))()",
+    "features": "Auto Farm, ESP and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Auto Collect Easter Egg",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastebin.com/raw/gE1u62QJ\", true))()\n\n--get key: https://discord.gg/4z4vjkRyTJ",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Roblox - Aimbot, Esp, Teleports",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastebin.com/raw/0zcsYxVu\"))()",
+    "features": "Aimbot, Esp, Teleports",
+    "keyRequired": false
+  },
+  {
+    "title": "AutoFarm Script Murder Mystery 2 Roblox - SolixHub",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua\"))()",
+    "features": "SolixHub",
+    "keyRequired": false
+  },
+  {
+    "title": "Script Murder Mystery 2 - ESP, Show All Player Role",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGetAsync(\"https://raw.githubusercontent.com/ArtChivegroup/Roblox/refs/heads/main/script/murder%20mystery%202.lua\"))()",
+    "features": "ESP, Show All Player Role",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Mobile and PC FOGGY Hub",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FOGOTY/foggy-loader/refs/heads/main/loader\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Summer Version - Auto Farm, Auto Beach Ball, Anti-Afk",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "--getgenv().GameName = \"MM2\"\nloadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/loader.lua'))()",
+    "features": "Auto Farm, Auto Beach Ball, Anti-Afk",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Summer - Collect Beach Ball",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/gumanba/Scripts/main/mm2\"))()",
+    "features": "Collect Beach Ball",
+    "keyRequired": false
+  },
+  {
+    "title": "Script MM2 Murder Mystery 2 (Onyx Hub) - Rage, Visuals, Teleport, Auto Farm",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/OnyxHub-New/OnyxHub/refs/heads/main/mm2'))()",
+    "features": "Rage, Visuals, Teleport, Auto Farm",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Mobile BaikalHub - ESP, Teleport, Trolling and More",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Roman34296589/SnapSanixHUB/refs/heads/main/SnapSanixHUB.lua'))()",
+    "features": "ESP, Teleport, Trolling and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Script Murder Mystery 2 - Kill Aura, Troll, ESP",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FOGOTY/mm2-piano-reborn/refs/heads/main/scr\"))()",
+    "features": "Kill Aura, Troll, ESP",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script No Key 2025",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/vzyxer/Aether-Hub-Global-Roblox-Script-Hub/refs/heads/main/Murder%20Mystery%202\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Mobile - GunDrop, Teleport, AutoFarm, ESP, Aimbot",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Snowt-Team/SNT-HUB/refs/heads/main/MurderMystery2.txt\"))()",
+    "features": "GunDrop, Teleport, AutoFarm, ESP, Aimbot",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Murder Mystery 2 Auto Farm Script",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Multi'))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script XHub - ESP, Kill Aura, Troll",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/CycleScripts/Official/refs/heads/main/freemium\"))()",
+    "features": "ESP, Kill Aura, Troll",
+    "keyRequired": false
+  },
+  {
+    "title": "Tbao Hub MM2 Script",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubMurdervssheriff\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Auto Farm GUI",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "MM 2 Script - Find Egg Hunt",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/mm2\", false))()",
+    "features": "Find Egg Hunt",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script No Key - Aimbot, ESP, GodMode",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua\", false))()",
+    "features": "Aimbot, ESP, GodMode",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Express Hub -  Aimbot, ESP, Trolling, Teleport",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AscendFromHeaven/Kitsune-Hub/refs/heads/main/WhitelistMM2\"))()",
+    "features": "Aimbot, ESP, Trolling, Teleport",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Foggy Hub - ESP, X-Ray, Teleport, Troll",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FOGOTY/mm2-piano-reborn/refs/heads/main/scr\"))()",
+    "features": "ESP, X-Ray, Teleport, Troll",
+    "keyRequired": false
+  },
+  {
+    "title": "YHUB Murder Mystery 2 Mobile Script - ESP, Players, Teleport, Troll",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Luarmor123/YHUB-Community/refs/heads/main/Murder-Mystery2\"))()",
+    "features": "ESP, Players, Teleport, Troll",
+    "keyRequired": false
+  },
+  {
+    "title": "Get Script MM2 Roblox Forge Hub - Auto Farms GUI(Updated)",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua\"))()",
+    "features": "Auto Farms GUI(Updated)",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 New Script Candy Farm",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/vexroxd/My-Script-/refs/heads/main/MM2-Candy-Farm\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Script Pastebin: Autofarm Candy",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet\"https://pastebin.com/raw/dB3kQmYm\")()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "Vertex Script MM2 - Auto Farm, Auto Grab Gun, Auto End Round",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()",
+    "features": "Auto Farm, Auto Grab Gun, Auto End Round",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 YARHM SCRIPT 2025",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua\", true))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Script Roblox - Auto Farm, Coin Farm, Egg Farm",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/KidichiHB/Kidachi/main/Scripts/MM2\", true))()",
+    "features": "Auto Farm, Coin Farm, Egg Farm",
+    "keyRequired": false
+  },
+  {
+    "title": "Auto Farm MM2 Mobile Script",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "--Best configs that dont kick you:\n_G.AutofarmSettings = {\n    AntiAfk = true, \n    DelayFarm = 2.15,\n    ResetWhenFullBag = true,\n    CoinType = \"BeachBall\",\n    Disable3DRendering = false,\n    ImproveFPS = false,\n    StartAutofarm = false\n}\n--You can set StartAutofarm to true if you want put autofarm to autoexec\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/NoCapital2/MM2Autofarm/main/script\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "MM2 Hack Eclipse Hub - Auto Farm, Coin Farm, Esp",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "getgenv().mainKey = \"nil\";\n\nlocal a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,\"https\\58//api.eclipsehub.xyz/auth\";c(a and b,\"Executor not Supported\")a(b({Url=e..\"\\?\\107e\\121\\61\"..d(mainKey),Headers={[\"User-Agent\"]=\"Eclipse\"}}).Body)()",
+    "features": "Auto Farm, Coin Farm, Esp",
+    "keyRequired": false
+  },
+  {
+    "title": "Murder Mystery 2 Nexus Hub is a script with a user-friendly interface and a wide range of features. ESP, Auto Farm, X-RAY, FlyHack, player customization, and more",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/s-0-a-b/nexus/main/loadstring\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "A simple but very effective hack on Murder Mystery 2. This is the Admin Panel, which is available to the normal player. Using this hack, you will be able to activate hidden features of the game and manage players. Kill All, Kill Murderer, AFK Farm, Anti-Lag, Coin Farm, and many other features",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet('https://pastebin.com/raw/e89Mn4Ec'))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "R3TH PRIV MM2 Script",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zxclua/m/main/script\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "Get Script Mars Hub Murder Mystery 2",
+    "game": "Murder Mystery 2",
+    "icon": "/assets/icons/roblox-murder-mystery-2.png",
+    "loadstring": "-- Join our discord https://discord.gg/hr43CMJNkc\n-- Only for MM2 (Murder Mystery 2)\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/1andonlymars/MarsHub/main/MM2\"))()",
+    "features": "NEXUS, MM2 Admin Panel, Forge",
+    "keyRequired": false
+  },
+  {
+    "title": "Roll A Stickman! Script Barrage Hub | AUTO ROLL, AUTO BOOSTS, AUTO PROGRESS, AUTO RAID",
+    "game": "[🎃] Roll A Stickman!",
+    "icon": "/assets/icons/roblox-roll-a-stickman.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://barrage.cc/loader\"))()",
+    "features": "AUTO ROLL, AUTO BOOSTS, AUTO PROGRESS, AUTO RAID",
+    "keyRequired": false
+  },
+  {
+    "title": "Roll A Stickman Script Ouroboros Hub | Keyless, AutoRoll, AutoWave, AutoFarm",
+    "game": "[🎃] Roll A Stickman!",
+    "icon": "/assets/icons/hub-ouroboros-hub.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua\"))()",
+    "features": "Keyless, AutoRoll, AutoWave, AutoFarm",
+    "keyRequired": false
+  },
+  {
+    "title": "Tap Simulator REBORN Script Kuurax Hub (Keyless) | Auto Tapper, Auto Rebirth, Island Progression",
+    "game": "[🎃] Tap Simulator REBORN",
+    "icon": "/assets/icons/roblox-tap-simulator-reborn.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://scripts.majra.live/kuurax.lua\"))()",
+    "features": "Auto Tapper, Auto Rebirth, Island Progression",
+    "keyRequired": false
+  },
+  {
+    "title": "Tap Simulator REBORN Script Arise Hub | Auto Tap, Auto Chest, Auto Collect World Chest, Auto Rebirth",
+    "game": "[🎃] Tap Simulator REBORN",
+    "icon": "/assets/icons/roblox-tap-simulator-reborn.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/AriseScript/Main/refs/heads/main/Games\"))()",
+    "features": "Auto Tap, Auto Chest, Auto Collect World Chest, Auto Rebirth",
+    "keyRequired": false
+  },
+  {
+    "title": "Tap Simulator: Reborn Script Ouroboros Hub | Instant TP World, Auto Click, Auto Break Breakables",
+    "game": "[🎃] Tap Simulator REBORN",
+    "icon": "/assets/icons/hub-ouroboros-hub.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua\"))()",
+    "features": "Instant TP World, Auto Click, Auto Break Breakables",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Kuurax Hub (Keyless) | Instant Solve, Auto Win & Fast Clear, Auto Evade Killer, ESP",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://scripts.majra.live/kuurax.lua\"))()",
+    "features": "Instant Solve, Auto Win & Fast Clear, Auto Evade Killer, ESP",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Cursedsaken Hub | Auto Block, Auto Generator, Auto Win, God Mode",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zxcursedsocute/Forsaken-Script/refs/heads/main/lua\"))()",
+    "features": "Auto Block, Auto Generator, Auto Win, God Mode",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Plus Hub - Auto Generator(s), Auto Pickup",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/NaikoScript/Forsaken-Plus/main/Script\"))()",
+    "features": "Auto Generator(s), Auto Pickup",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script NEW CursedHub - Player ESP, Inf Stamina, Generators, Block",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/vana09062023-ai/kreahub/refs/heads/main/loader.lua\"))()",
+    "features": "Player ESP, Inf Stamina, Generators, Block",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Best (swiziby Hub) - Infinite Stamina, Auto Generator, Fly, Smart TP, Fast React",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastebin.com/raw/BvqRVaQ6\"))()",
+    "features": "Infinite Stamina, Auto Generator, Fly, Smart TP, Fast React",
+    "keyRequired": false
+  },
+  {
+    "title": "DP HUB | Forsaken Script - Auto Generators, ESP for everything, Aimbot, Silent Aim, Infinite Stamina",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/COOLXPLO/DP-HUB-coolxplo/refs/heads/main/forsken.lua\"))()",
+    "features": "Forsaken Script - Auto Generators, ESP for everything, Aimbot, Silent Aim, Infinite Stamina",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Catsaken Hub - Inf Stamina, Auto Block, Ai Farm, Auto Generator",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/aibabylaugh/catsaken-real-script-not-assets/refs/heads/main/obfuscated-1448974601077002340.lua' ))();",
+    "features": "Inf Stamina, Auto Block, Ai Farm, Auto Generator",
+    "keyRequired": false
+  },
+  {
+    "title": "[🎆] Forsaken Best Script 2026 - Auto Farm, Void Rush Controller, Aimbot, Walkspeed",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.junkie-development.de/api/v1/luascripts/public/b803c8ca9d0205a7561d9f0467418e00b7743ef568f5471653432762027cf0f0/download\"))()",
+    "features": "Auto Farm, Void Rush Controller, Aimbot, Walkspeed",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script/Hack - Auto Farm, Infinite Stamina, ESP, Auto Block",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/34f3f/forsaken.github.io/refs/heads/main/ringtabublik.lua\"))()",
+    "features": "Auto Farm, Infinite Stamina, ESP, Auto Block",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Roblox Script 2026 + KEY - AUTO GEN INVISIBLE INFINITE STAMINA",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://api.luarmor.net/files/v3/loaders/81aa13a754bdf816b17af79a76653992.lua\"))()\n\nkey: Eps1llon",
+    "features": "AUTO GEN INVISIBLE INFINITE STAMINA",
+    "keyRequired": true
+  },
+  {
+    "title": "Forsaken Script | Roblox - Keyless, Infinite Stamina, NoClip, Trolling",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/PlutomasterAccount/Funny-Hub-V2/main/Forsaken\"))()",
+    "features": "Roblox - Keyless, Infinite Stamina, NoClip, Trolling",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script [NEW] Ringta Hub: Infinite Stamina, Auto Generator, Auto Block, Aimbot",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/wefwef127382/forsakenloader.github.io/refs/heads/main/RINGTABUBLIK.lua\"))()",
+    "features": "Infinite Stamina, ESP, Auto Generator",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Hack and Script: Infinite Stamina, Auto Complete Generator, ESP",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Fr0stByt3Z/Fr0stByt3Z-Hub/refs/heads/main/Forsaken%20Obfuscated.lua\",true))()",
+    "features": "Infinite Stamina, ESP, Auto Generator",
+    "keyRequired": false
+  },
+  {
+    "title": "[G666😈] Forsaken Best Script - Auto Block, Get G666, Auto Generator, Infinite Stamina, Auto Win, ESP",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/zxcursedsocute/Forsaken-Script/refs/heads/main/lua\"))()",
+    "features": "Auto Block, Get G666, Auto Generator, Infinite Stamina, Auto Win, ESP",
+    "keyRequired": false
+  },
+  {
+    "title": "Script Forsaken No Key Void Ware - Auto Complete Generator,  Auto Start Generator Complete, ESP and More",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/voidsaken-script/Voidsaken-Loader/refs/heads/main/main\"))()",
+    "features": "Auto Complete Generator,  Auto Start Generator Complete, ESP and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script 2025 Auto Farm GUI - Auto Kill All, Killer ESP, Auto Dodge",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "getgenv().Settings = { -- these options are here just incase you would like to make it seem less obvious that you are cheating, you can leave these alone if you dont care that other people notice you are cheating\n    resetAfterGens = false, -- set this to true if you would like to automatically reset after the autofarm is done doing all the gens\n    safeSpotAfterGens = true, -- set this to true if you would like to teleport to a safe spot after the autofarm is done doing all the gens, that way the killer cant get you\n    autoKillSurvivors = true, -- set this to true if you would like to autokill all the survivors when a game starts and you are the killer\n}\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/raxscripts/LuaUscripts/refs/heads/main/ForsakenAutoFarm.lua\"))()",
+    "features": "Auto Kill All, Killer ESP, Auto Dodge",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Mobile, PC SNT Hub - Aimbot, AutoFarm, ESP, Kill Aura, Kill All",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Snowt69/SNT-HUB/refs/heads/main/Forsaken\"))()",
+    "features": "Aimbot, AutoFarm, ESP, Kill Aura, Kill All",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Slasher New Updated PC and Mobile - Auto Complete, Infinite Stamina, AutoFarm",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastefy.app/gV5ljg95/raw\", true))()",
+    "features": "Auto Complete, Infinite Stamina, AutoFarm",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Pastebin AshLab Hub - Auto Generator, Always Sprint, ESP",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastebin.com/raw/Xan01DmF\", true))()",
+    "features": "Auto Generator, Always Sprint, ESP",
+    "keyRequired": false
+  },
+  {
+    "title": "Script Forsaken [UPDATE 🔪] Hutao Hub - Kill Aura, ESP, Auto Finish, Auto Farm",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://pastebin.com/raw/M1JTpck1\"))()",
+    "features": "Kill Aura, ESP, Auto Finish, Auto Farm",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Auto Farm, Emote, ESP",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/OhhMyGehlee/sak/refs/heads/main/for\"))()",
+    "features": "Infinite Stamina, ESP, Auto Generator",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Mod GUI Pastebin",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Moondiety/refs/heads/main/Loader'))()",
+    "features": "Infinite Stamina, ESP, Auto Generator",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Mobile - Infinite Stamina, Auto Block attacks, Auto Generator",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Actualmrp/FW-Forsaken-V2.0-Rep/refs/heads/main/FrostwareForsakenV2.0Source.txt\"))()",
+    "features": "Infinite Stamina, Auto Block attacks, Auto Generator",
+    "keyRequired": false
+  },
+  {
+    "title": "Script Forsaken PC and Mobile - ESP, Inf Stamina, No Stun, Auto",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/loader.lua'))()",
+    "features": "ESP, Inf Stamina, No Stun, Auto",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Get All emotes",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "--[Script by lexioi]\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/MaybeNotMandy/forsaken/refs/heads/main/sae\"))()",
+    "features": "Infinite Stamina, ESP, Auto Generator",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script ESP",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "KEY=\"ur_key_huh\"\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/Dzgak/xrurus/refs/heads/main/farsaken.lua\"))(\"cool text\")",
+    "features": "Infinite Stamina, ESP, Auto Generator",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Full PC and Mobile",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Forsaken/refs/heads/main/Forsaken.lua'))()",
+    "features": "Infinite Stamina, ESP, Auto Generator",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Mobile V2 - Infinite Staminma, Visuals, Farming",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/PlutomasterAccount/Funny-Hub-V2-Forsaken/refs/heads/main/Funny%20Hub%20V2%20Forsaken.lua\"))()",
+    "features": "Infinite Staminma, Visuals, Farming",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script GUI - ESP, Inf Stamina, Aimbot, Auto Farm",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Altairkaaa/c00l/refs/heads/main/c00lguiv1.lua'))()\n\n-- STAMINA SETTINGS WONT WORK WITH XENO OR SOLARA\n-- USE VELOCITY OR A HIGHER END EXECUTOR!!!",
+    "features": "ESP, Inf Stamina, Aimbot, Auto Farm",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Roblox Keyless - ESP, Auto Generator Complete, Inf Stamina",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/sigmaboy-sigma-boy/sigmaboy-sigma-boy/refs/heads/main/StaminaSettings.ESP.PIDC.raw'))()",
+    "features": "ESP, Auto Generator Complete, Inf Stamina",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script Roblox - Auto Farm, Auto Play, ESP",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://rifton.top/loader.lua\"))()",
+    "features": "Auto Farm, Auto Play, ESP",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Hack - ESP, Auto Generator Complete and More (UPDATED🔥)",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "if getgenv then\n    getgenv().DebugNotifications = \"false\"\n    getgenv().TrackMePlease = \"true\"\nend\n\nloadstring(game:HttpGet(\"https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua\"))()\n\n--the system key is present",
+    "features": "ESP, Auto Generator Complete and More (UPDATED🔥)",
+    "keyRequired": false
+  },
+  {
+    "title": "Script Forsaken No Key - Infinite Stamina, ESP and More",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet('https://raw.githubusercontent.com/Saiky988/Saryn-Hub/refs/heads/main/Saryn%25Hub%25Beta.lua'))()",
+    "features": "Infinite Stamina, ESP and More",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Script - Auto Skill, Auto Generator, ESP",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/MaybeNotMandy/forsaken/refs/heads/main/sae\"))()",
+    "features": "Auto Skill, Auto Generator, ESP",
+    "keyRequired": false
+  },
+  {
+    "title": "Get Mobile Script Forsaken Roblox - Elysian Hub",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Selivus07/forsakenfr/refs/heads/main/ElysianV.lua\",true))()",
+    "features": "Elysian Hub",
+    "keyRequired": false
+  },
+  {
+    "title": "Forsaken Mobile Script - Apple Hub",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGetAsync((\"https://raw.githubusercontent.com/SilkScripts/AppleStuff/refs/heads/main/AppleFSKV2\")))()",
+    "features": "Apple Hub",
+    "keyRequired": false
+  },
+  {
+    "title": "Key:Fart",
+    "game": "[NOS🦇] Forsaken",
+    "icon": "/assets/icons/roblox-nos-forsaken.png",
+    "loadstring": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/ivannetta/ShitScripts/refs/heads/main/forsaken.lua\", true))()",
+    "features": "Infinite Stamina, ESP, Auto Generator",
+    "keyRequired": true
+  }
+]

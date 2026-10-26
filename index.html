@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlRoot">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,12 @@
   <meta name="description" content="DenKi is a modern Roblox script hub with one-click copy, auto platform detection, and a curated library of free and verified scripts." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+  <link rel="preload" href="assets/sounds/copy.mp3" as="audio" type="audio/mpeg" />
+  <link rel="preload" href="assets/sounds/install.mp3" as="audio" type="audio/mpeg" />
 </head>
 <body>
+<!-- Interactive Water Ripple / Liquid Halftone Canvas -->
+<canvas id="liquid-halftone-canvas" class="liquid-halftone-canvas" aria-hidden="true"></canvas>
 
 <!-- Animated Background -->
 <div class="bg-pattern" aria-hidden="true"></div>
@@ -16,19 +20,57 @@
 <!-- ═══════════════ NAVBAR ═══════════════ -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="#" class="nav-brand">
-      <img src="assets/logo.jpg" alt="DenKi Logo" />
-      <h1>DenKi</h1>
-    </a>
+    <div class="nav-brand-group">
+      <a href="#" class="nav-brand">
+        <img src="assets/logo.jpg" alt="DenKi Logo" />
+        <h1>DenKi</h1>
+      </a>
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false" title="Language / ភាសា">
+          <span class="lang-flag" id="activeLangFlag">
+            <svg class="flag-icon" viewBox="0 0 60 30" width="18" height="12"><clipPath id="uk-clip-head"><path d="M0 0v30h60V0z"/></clipPath><g clip-path="url(#uk-clip-head)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="3.5"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+          </span>
+          <span class="lang-code" id="activeLangCode">EN</span>
+          <svg class="lang-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="lang-dropdown" id="langDropdown" role="menu">
+          <button class="lang-item active" data-lang="en" type="button" role="menuitem">
+            <span class="lang-flag">
+              <svg class="flag-icon" viewBox="0 0 60 30" width="18" height="12"><clipPath id="uk-clip-opt"><path d="M0 0v30h60V0z"/></clipPath><g clip-path="url(#uk-clip-opt)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="3.5"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+            </span>
+            <span class="lang-text">English</span>
+            <svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+          <button class="lang-item" data-lang="km" type="button" role="menuitem">
+            <span class="lang-flag">
+              <svg class="flag-icon" viewBox="0 0 60 38" width="18" height="12"><rect width="60" height="38" fill="#032EA6"/><rect y="9.5" width="60" height="19" fill="#E00025"/><g fill="#FFFFFF" transform="translate(18, 10.5) scale(0.6)"><path d="M20 2v6h-4v2h-4v4H8v4h24v-4h-4v-4h-4V10h-4V2zm0 3l2 3h-4l2-3zm-6 5l2 3h-4l2-3zm12 0l2 3h-4l2-3z"/><rect x="6" y="18" width="28" height="3"/></g></svg>
+            </span>
+            <span class="lang-text">ភាសាខ្មែរ</span>
+            <svg class="lang-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <!-- Wi-Fi / Phone Helper Button -->
+      <button class="wifi-dev-btn" id="wifiDevBtn" type="button" title="Connect Phone via Wi-Fi (Scan QR)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+          <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+          <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+          <circle cx="12" cy="20" r="1"/>
+        </svg>
+        <span class="wifi-btn-text">Phone Wi-Fi</span>
+        <span class="wifi-pulse-dot"></span>
+      </button>
+    </div>
     <div class="nav-links" id="navLinks">
-      <a href="#hero" class="active">Home</a>
-      <a href="#scripts-section">Scripts</a>
-      <a href="#platform-section">Downloads</a>
-      <a href="#terminal-section">Terminal</a>
+      <a href="#scripts-section" class="active" data-i18n="nav.scripts">Scripts</a>
+      <a href="#platform-section" data-i18n="nav.downloads">Downloads</a>
+      <a href="#tutorials-section">Tools</a>
       <a href="https://github.com" target="_blank" rel="noopener" class="nav-cta">
         <!-- GitHub icon -->
         <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.83.58A12.01 12.01 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        GitHub
+        <span>GitHub</span>
       </a>
     </div>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
@@ -37,71 +79,189 @@
   </div>
 </nav>
 
-<!-- ═══════════════ HERO ═══════════════ -->
-<section class="hero section" id="hero">
-  <div class="container">
-    <div class="hero-badge">
-      <span class="dot"></span>
-      sp-roblox API Connected
-    </div>
-    <h2>
-      Your Ultimate<br />
-      <span class="gradient-text">Roblox Script Hub</span>
-    </h2>
-    <p>Browse, search, and copy curated Roblox scripts instantly. One-click clipboard, auto platform detection, and a beautiful terminal experience.</p>
-    <div class="hero-actions">
-      <a href="#scripts-section" class="btn btn-primary">
-        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        Browse Scripts
-      </a>
-      <a href="#platform-section" class="btn btn-outline">
-        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download Executor
-      </a>
-    </div>
-    <div class="stats-bar">
-      <div class="stat">
-        <div class="stat-value" id="statScripts">—</div>
-        <div class="stat-label">Scripts</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">Free</div>
-        <div class="stat-label">Forever</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value" id="statPlatforms">3</div>
-        <div class="stat-label">Platforms</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">24/7</div>
-        <div class="stat-label">Uptime</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ═══════════════ SCRIPTS SECTION ═══════════════ -->
 <section class="section" id="scripts-section">
   <div class="container">
     <div class="section-header reveal">
-      <h3>⚡ Script Library</h3>
-      <p>Search and browse thousands of Roblox scripts from the community</p>
+      <h3 class="section-title">
+        <svg class="section-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span data-i18n="scripts.title">Script Library</span>
+      </h3>
+      <p data-i18n="scripts.subtitle">Search and browse thousands of Roblox scripts from the community</p>
+    </div>
+
+    <!-- Key Bypass Tool -->
+    <div class="bypass-container reveal">
+      <div class="bypass-header">
+        <div class="bypass-badge">
+          <svg class="bypass-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          <span data-i18n="bypass.badge">Key Bypass Tool</span>
+        </div>
+        <p class="bypass-desc" data-i18n="bypass.desc">Paste key link to bypass Linkvertise, Lootlabs, Work.ink instantly</p>
+      </div>
+      <div class="bypass-bar" id="bypassBar">
+        <div class="bypass-input-wrap">
+          <svg class="bypass-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+          <input type="text" id="bypassInput" placeholder="Paste key link here (Linkvertise, Lootlabs, Work.ink, etc.)..." data-i18n-placeholder="bypass.placeholder" autocomplete="off" spellcheck="false" />
+        </div>
+        <div class="bypass-actions">
+          <button type="button" class="bypass-btn bypass-paste-btn" id="bypassPasteBtn" title="Paste from clipboard" data-i18n-title="bypass.paste_title">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+            </svg>
+            <span data-i18n="bypass.paste">Paste</span>
+          </button>
+          <button type="button" class="bypass-btn bypass-submit-btn" id="bypassSubmitBtn" title="Bypass Key" data-i18n-title="bypass.submit_title">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+            <span class="bypass-btn-text" data-i18n="bypass.submit">Bypass Key</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bypass Loading State -->
+      <div class="bypass-loading-box hidden" id="bypassLoadingBox">
+        <div class="bypass-spinner"></div>
+        <span class="bypass-loading-text" data-i18n="bypass.loading">កំពុងដោះសោ Key សូមរង់ចាំបន្តិច...</span>
+      </div>
+
+      <!-- Bypass Result Container -->
+      <div class="bypass-result-box hidden" id="bypassResultBox">
+        <!-- Success Card -->
+        <div class="bypass-result-card bypass-result-success" id="bypassResultSuccess">
+          <div class="bypass-result-header">
+            <div class="result-badge-success">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <span data-i18n="bypass.unlocked_title">ដោះសោជោគជ័យ (Bypassed Key / Link)</span>
+            </div>
+            <span class="bypass-time" id="bypassTimeTag">Success</span>
+          </div>
+
+          <!-- Clickable Destination Link with Green/Purple glow -->
+          <a href="#" target="_blank" rel="noopener noreferrer" class="bypass-key-link hidden" id="bypassKeyLink">
+            <div class="bypass-key-link-info">
+              <span class="bypass-key-link-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                </svg>
+                <span class="bypass-key-link-label" id="bypassKeyLinkLabel" data-i18n="bypass.click_get_key">ចុចទីនេះដើម្បីយក Key</span>
+              </span>
+              <span class="bypass-key-link-url" id="bypassKeyLinkUrl"></span>
+            </div>
+            <span class="bypass-key-link-action">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </span>
+          </a>
+
+          <div class="bypass-key-row">
+            <div class="bypass-key-code-wrap">
+              <input type="text" readonly class="bypass-key-value" id="bypassKeyValue" value="" spellcheck="false" />
+            </div>
+            <button type="button" class="bypass-copy-btn" id="bypassCopyKeyBtn" title="Copy Link" data-i18n-title="bypass.copy_title">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              <span class="copy-label" data-i18n="bypass.copy_key">Copy Link</span>
+            </button>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="bypass-open-btn hidden" id="bypassOpenLinkBtn" title="Open Destination Link" data-i18n-title="bypass.open_title">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              <span class="open-label" data-i18n="bypass.open_key">Open Link</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Verification Required & Error Card -->
+        <div class="bypass-result-card bypass-result-error hidden" id="bypassResultError">
+          <div class="bypass-error-header">
+            <svg class="error-icon" id="bypassStatusIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            <div class="bypass-error-info">
+              <span class="bypass-status-badge" id="bypassStatusBadge">Verification Required</span>
+              <span class="bypass-error-msg" id="bypassErrorMsg">មិនអាចដោះសោបានទេ</span>
+            </div>
+          </div>
+          <div class="bypass-error-actions" id="bypassErrorActions">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="bypass-ext-btn" id="bypassExtBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              <span id="bypassExtBtnText" data-i18n="bypass.open_external">ដោះសោលើ bypass.city ដោយផ្ទាល់</span>
+            </a>
+            <button type="button" class="bypass-retry-btn hidden" id="bypassRetryBtn" title="Retry Extraction" data-i18n-title="bypass.retry_title">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 4 23 10 17 10"/>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+              </svg>
+              <span data-i18n="bypass.retry">Retry</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Search Bar -->
     <div class="search-container reveal">
       <div class="search-bar" id="searchBar">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="searchInput" placeholder="Search scripts (e.g., 'admin', 'arsenal', 'infinite yield')..." />
-        <button class="search-btn" id="searchBtn">Search</button>
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search scripts (e.g., 'admin', 'arsenal', 'infinite yield')..." data-i18n-placeholder="scripts.search_placeholder" />
+        <button class="search-btn" id="searchBtn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span data-i18n="scripts.search_btn">Search</span>
+        </button>
       </div>
+    </div>
+
+    <!-- Game Category Filters -->
+    <div id="game-filters" class="game-filters reveal"></div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner-container hidden">
+      <div class="spinner"></div>
+      <p id="loadingText" data-i18n="loading.desc">កំពុងទាញយកទិន្នន័យ...</p>
     </div>
 
     <!-- Script Cards -->
     <div class="scripts-grid" id="scriptsGrid"></div>
 
+    <!-- Load More -->
+    <div class="load-more-container" id="loadMoreContainer" style="display:none">
+      <button class="btn btn-outline load-more-btn" id="loadMoreBtn">
+        <svg class="btn-icon load-more-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="7 13 12 18 17 13"/>
+          <polyline points="7 6 12 11 17 6"/>
+        </svg>
+        <span class="load-more-spinner" style="display:none"></span>
+        <span class="load-more-text" data-i18n="scripts.load_more">Load More (ទាញយកបន្ថែម)</span>
+      </button>
+    </div>
+
     <!-- Pagination -->
-    <div class="pagination" id="pagination"></div>
+    <div class="pagination" id="pagination" style="display:none"></div>
   </div>
 </section>
 
@@ -109,8 +269,11 @@
 <section class="platform-section section" id="platform-section">
   <div class="container">
     <div class="section-header reveal">
-      <h3>📱 Download Executor</h3>
-      <p>Auto-detected your platform — get the right executor for your device</p>
+      <h3 class="section-title">
+        <svg class="section-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3" ry="3"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <span data-i18n="platform.title">Download Executor</span>
+      </h3>
+      <p data-i18n="platform.subtitle">Choose your platform — get the right executor for your device</p>
     </div>
 
     <!-- Detected Badge -->
@@ -121,57 +284,232 @@
       </div>
     </div>
 
-    <!-- Platform Switch -->
+    <!-- Platform Switcher (Toggle Buttons) -->
     <div class="platform-switcher reveal">
       <div class="switch-track" id="switchTrack">
-        <button class="switch-btn active" data-platform="android" id="switchAndroid">
+        <button class="switch-btn active" data-platform="android" id="btn-android" type="button">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 2.132a.503.503 0 00-.684.193l-1.165 2.07A7.867 7.867 0 0012 3.5a7.858 7.858 0 00-3.673.895L7.162 2.325a.504.504 0 00-.878.49l1.145 2.035A7.544 7.544 0 004.5 11.5h15a7.544 7.544 0 00-2.929-6.65l1.145-2.035a.502.502 0 00-.193-.683zM9 9.5a1 1 0 110-2 1 1 0 010 2zm6 0a1 1 0 110-2 1 1 0 010 2zM5 12.5v6a1.5 1.5 0 001.5 1.5H8v2.5a1.5 1.5 0 003 0V20h2v2.5a1.5 1.5 0 003 0V20h1.5a1.5 1.5 0 001.5-1.5v-6H5zm-2.5 0a1.5 1.5 0 00-1.5 1.5v4a1.5 1.5 0 003 0v-4a1.5 1.5 0 00-1.5-1.5zm19 0a1.5 1.5 0 00-1.5 1.5v4a1.5 1.5 0 003 0v-4a1.5 1.5 0 00-1.5-1.5z"/></svg>
-          Android
+          <span data-i18n="platform.android">Android</span>
         </button>
-        <button class="switch-btn" data-platform="ios" id="switchIos">
+        <button class="switch-btn" data-platform="ios" id="btn-ios" type="button">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          iOS
+          <span data-i18n="platform.ios">iOS</span>
         </button>
         <div class="switch-slider" id="switchSlider"></div>
       </div>
     </div>
 
-    <!-- Platform Cards -->
-    <div class="platform-cards" id="platformCards">
-      <!-- Populated by JS -->
+    <!-- Platform Cards (Executors Centered Flexbox) -->
+    <div class="platform-cards executors-grid" id="executors-grid">
+      <!-- Card 1: Denki Executor (Android) -->
+      <div id="android-card" class="platform-card script-card platform-card-featured" data-platform="android">
+        <img src="/assets/icons/denki-icon.jpg" alt="Denki Logo" class="executor-icon">
+        <h4>Denki Executor (Android)</h4>
+        <span class="executor-version">Version: v2.743.1136</span>
+        <p data-i18n="platform.android_desc">The #1 Android Roblox executor. Fast, stable, and supports most scripts with a clean UI.</p>
+        <a href="/assets/downloads/DENKI-Delta-2.743.1136.apk" download="DENKI-Delta-2.743.1136.apk" class="download-btn android-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="platform.download_android">ដោនឡូតសម្រាប់ Android</span>
+        </a>
+      </div>
+
+      <!-- Card 2: Denki Executor (iOS) -->
+      <div id="ios-card" class="platform-card script-card hidden" data-platform="ios">
+        <img src="/assets/icons/denki-icon.jpg" alt="Denki Logo" class="executor-icon">
+        <h4>Denki Executor (iOS)</h4>
+        <span class="executor-version">Version: v2.717.982</span>
+        <p data-i18n="platform.ios_desc">Premium iOS Roblox executor. Supports direct sideloading and top-tier script execution.</p>
+        <a href="/assets/downloads/DENKI-Delta-2.717.982.ipa" download="DENKI-Delta-2.717.982.ipa" class="download-btn ios-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="platform.download_ios">ដោនឡូតសម្រាប់ iOS</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ SCRIPT TERMINAL ═══════════════ -->
-<section class="terminal-section section" id="terminal-section">
+<!-- ═══════════════ TUTORIALS & TOOLS ═══════════════ -->
+<section class="tutorials-section section" id="tutorials-section">
   <div class="container">
     <div class="section-header reveal">
-      <h3>🖥️ Script Terminal</h3>
-      <p>Select any script above and view it here — one-click copy to clipboard</p>
+      <h3 class="section-title">
+        <svg class="section-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+        <span>TUTORIALS & TOOLS</span>
+      </h3>
+      <p>មគ្គុទ្ទេសក៍ និងឧបករណ៍ជំនួយសម្រាប់ការប្រើប្រាស់ — Guides & Essential Tools</p>
     </div>
-    <div class="terminal reveal" id="terminal">
-      <div class="terminal-header">
-        <div class="terminal-dots"><span></span><span></span><span></span></div>
-        <div class="terminal-title" id="terminalTitle">DenKi Terminal</div>
-        <div class="terminal-actions">
-          <button class="terminal-btn" id="btnCopy" title="Copy to clipboard">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-            <span class="btn-label">Copy</span>
-          </button>
-          <button class="terminal-btn" id="btnClear" title="Clear terminal">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
-            <span class="btn-label">Clear</span>
-          </button>
+
+    <div class="tutorials-container reveal">
+      <!-- Card 1: Key Tutorial -->
+      <div class="tutorial-card">
+        <div class="tool-left">
+          <div class="tool-icon-box tool-icon-yellow">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/>
+              <circle cx="16.5" cy="7.5" r="1" fill="#f59e0b" stroke="none"/>
+            </svg>
+          </div>
+          <div class="tool-info">
+            <h4 class="tool-title">របៀបយក Key delta លឿនបំផុត</h4>
+            <p class="tool-desc">Tutorial for getting the Key</p>
+          </div>
         </div>
+        <a href="https://t.me" target="_blank" rel="noopener" class="tool-link-btn" title="View Tutorial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
       </div>
-      <div class="terminal-body" id="terminalBody">
-        <div class="terminal-line"><span class="line-num">1</span><span class="comment">-- Welcome to DenKi Terminal ⚡</span></div>
-        <div class="terminal-line"><span class="line-num">2</span><span class="comment">-- Select a script from the library above</span></div>
-        <div class="terminal-line"><span class="line-num">3</span><span class="comment">-- or search for one and click to load it here.</span></div>
-        <div class="terminal-line"><span class="line-num">4</span><span></span></div>
-        <div class="terminal-line"><span class="line-num">5</span><span class="keyword">print</span><span class="operator">(</span><span class="string">"Hello, DenKi!"</span><span class="operator">)</span></div>
+
+      <!-- Card 2: YouTube Video Tutorial -->
+      <div class="tutorial-card">
+        <div class="tool-left">
+          <div class="tool-icon-box tool-icon-red">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </div>
+          <div class="tool-info">
+            <h4 class="tool-title">Video Tutorial ច្រើនបែប</h4>
+            <p class="tool-desc">ឆានែល YouTube ផ្លូវការ</p>
+          </div>
+        </div>
+        <a href="https://youtube.com" target="_blank" rel="noopener" class="tool-link-btn" title="Watch on YouTube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
       </div>
+
+      <!-- Card 3: DNS -->
+      <div class="tutorial-card">
+        <div class="tool-left">
+          <div class="tool-icon-box tool-icon-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </div>
+          <div class="tool-info">
+            <div class="tool-title-row">
+              <h4 class="tool-title">DNS</h4>
+              <span class="tool-badge-new">NEW</span>
+            </div>
+            <p class="tool-subtext"><span class="tool-status-dot"></span> skibidi.mobileconfig</p>
+          </div>
+        </div>
+        <a href="/assets/downloads/skibidi.mobileconfig" class="tool-action-btn tool-btn-install" download="skibidi.mobileconfig">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Install</span>
+        </a>
+      </div>
+
+      <!-- Card 4: E-Sign -->
+      <div class="tutorial-card">
+        <div class="tool-left">
+          <div class="tool-icon-box tool-icon-blue">
+            <img src="/assets/icons/Esign.png" alt="E-Sign" class="custom-tool-icon" onerror="this.onerror=null; this.src='https://applejr.net/assets/img-local/o8HGFP6m-54cada85.webp';">
+          </div>
+          <div class="tool-info">
+            <div class="tool-title-row">
+              <h4 class="tool-title">E-Sign</h4>
+              <span class="tool-badge-new">NEW</span>
+            </div>
+            <p class="tool-subtext"><span class="tool-status-dot"></span> E-Sign-SIGNED • RAKUTEN SECURITIES</p>
+          </div>
+        </div>
+        <a href="itms-services://?action=download-manifest&url=https://applejr.net/post/ESign_APPLEJR_RAKUTEN_AUTOCERT_NAVECO_BASE_UNSIGNED_ed4561f1.plist" class="tool-action-btn tool-btn-install" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Install</span>
+        </a>
+      </div>
+
+      <!-- Card 5: Scarlet iOS -->
+      <div class="tutorial-card">
+        <div class="tool-left">
+          <div class="tool-icon-box tool-icon-red">
+            <img src="/assets/icons/scarlet.png" alt="Scarlet iOS" class="custom-tool-icon" onerror="this.onerror=null; this.src='https://applejr.net/assets/img-local/4XwsL7um-9368b416.webp';">
+          </div>
+          <div class="tool-info">
+            <div class="tool-title-row">
+              <h4 class="tool-title">Scarlet iOS</h4>
+              <span class="tool-badge-red">POPULAR</span>
+            </div>
+            <p class="tool-subtext"><span class="tool-status-dot"></span> Scarlet Direct Install • No Computer</p>
+          </div>
+        </div>
+        <a href="itms-services://?action=download-manifest&url=https://applejr.net/post/Scarlet_APPLEJR_RAKUTEN_SCARLETCERT4_UNSIGNED_dd3b5cdc.plist" class="tool-action-btn tool-btn-install" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Install</span>
+        </a>
+      </div>
+
+      <!-- Card 6: Feather iOS -->
+      <div class="tutorial-card">
+        <div class="tool-left">
+          <div class="tool-icon-box tool-icon-blue">
+            <img src="/assets/icons/feather.png" alt="Feather iOS" class="custom-tool-icon" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/khcrysalis/Feather/v1.x/iOS/Resources/Icons/Main/Mac%403x.png';">
+          </div>
+          <div class="tool-info">
+            <div class="tool-title-row">
+              <h4 class="tool-title">Feather iOS</h4>
+              <span class="tool-badge-blue">OPEN SOURCE</span>
+            </div>
+            <p class="tool-subtext"><span class="tool-status-dot"></span> Modern On-Device IPA Signer & Certificates</p>
+          </div>
+        </div>
+        <a href="itms-services://?action=download-manifest&url=https://applejr.net/post/SideInstaller__1_3184204f.plist" class="tool-action-btn tool-btn-install" id="btn-install-feather" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Install</span>
+        </a>
+      </div>
+
+      <!-- Card 7: K-Sign (Khoindvn) -->
+      <div class="tutorial-card">
+        <div class="tool-left">
+          <div class="tool-icon-box tool-icon-purple">
+            <img src="/assets/icons/ksign.png" alt="K-Sign iOS" class="custom-tool-icon" onerror="this.onerror=null; this.src='https://applejr.net/assets/img-local/347Q9VHm-1b30c63d.webp';">
+          </div>
+          <div class="tool-info">
+            <div class="tool-title-row">
+              <h4 class="tool-title">K-Sign (Khoindvn)</h4>
+              <span class="tool-badge-purple">SIGNED</span>
+            </div>
+            <p class="tool-subtext"><span class="tool-status-dot"></span> KSign-SIGNED • RAKUTEN / KHOINDVN</p>
+          </div>
+        </div>
+        <a href="itms-services://?action=download-manifest&url=https://applejr.net/post/KSign_APPLEJR_RAKUTEN_AUTOCERT_ENCRYPTED_UNSIGNED_3ed72759.plist" class="tool-action-btn tool-btn-install" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Install</span>
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
@@ -185,30 +523,30 @@
           <img src="assets/logo.jpg" alt="DenKi" style="width:32px;height:32px;border-radius:8px" />
           <h1 style="font-size:1.15rem;font-weight:800;background:linear-gradient(135deg,#4F46E5,#0EA5E9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">DenKi</h1>
         </div>
-        <p>A modern Roblox script hub powered by the ScriptBlox API. Browse, search, and execute scripts across all platforms.</p>
+        <p data-i18n="footer.brand_desc">A modern Roblox script hub. Browse, search, and execute scripts across all platforms.</p>
       </div>
       <div class="footer-col">
-        <h5>Platform</h5>
-        <a href="#scripts-section">Script Library</a>
-        <a href="#terminal-section">Terminal</a>
-        <a href="#platform-section">Downloads</a>
+        <h5 data-i18n="footer.col_platform">Platform</h5>
+        <a href="#scripts-section" data-i18n="footer.link_scripts">Script Library</a>
+        <a href="#platform-section" data-i18n="footer.link_downloads">Downloads</a>
+        <a href="#tutorials-section">Tutorials & Tools</a>
       </div>
       <div class="footer-col">
-        <h5>Resources</h5>
-        <a href="#">API Docs</a>
-        <a href="#">Status</a>
-        <a href="#">Changelog</a>
+        <h5 data-i18n="footer.col_resources">Resources</h5>
+        <a href="#" data-i18n="footer.link_api">API Docs</a>
+        <a href="#" data-i18n="footer.link_status">Status</a>
+        <a href="#" data-i18n="footer.link_changelog">Changelog</a>
       </div>
       <div class="footer-col">
-        <h5>Community</h5>
+        <h5 data-i18n="footer.col_community">Community</h5>
         <a href="#">Discord</a>
         <a href="#">Twitter</a>
         <a href="#">GitHub</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 DenKi. All rights reserved.</span>
-      <span>Powered by ScriptBlox API</span>
+      <span data-i18n="footer.copyright">&copy; 2026 DenKi. All rights reserved.</span>
+      <span data-i18n="footer.powered">Powered by DenKi Platform</span>
     </div>
   </div>
 </footer>
@@ -216,29 +554,616 @@
 <!-- Toast Container -->
 <div class="toast-container" id="toastContainer"></div>
 
-<!-- Modal Overlay (for script details) -->
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal" id="modalContent">
-    <div class="modal-header">
-      <h4 id="modalTitle">Script Details</h4>
-      <button class="modal-close" id="modalClose">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
+
+<!-- Wi-Fi / Mobile Connection Modal -->
+<div id="wifi-modal" class="wifi-modal-backdrop hidden">
+  <div class="wifi-modal-card">
+    <div class="wifi-modal-header">
+      <div class="wifi-modal-title">
+        <div class="wifi-icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+        </div>
+        <div>
+          <h4>Open on Phone (Wi-Fi)</h4>
+          <p>Scan with phone camera on the same Wi-Fi</p>
+        </div>
+      </div>
+      <button class="wifi-close-btn" id="closeWifiModal" aria-label="Close">&times;</button>
     </div>
-    <div class="modal-body" id="modalBody"></div>
-    <div class="modal-footer">
-      <button class="btn btn-outline" id="modalCopyBtn">
-        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-        Copy Script
-      </button>
-      <button class="btn btn-primary" id="modalLoadBtn">
-        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        Load in Terminal
-      </button>
+
+    <div class="wifi-modal-body">
+      <div class="wifi-qr-wrapper">
+        <img id="wifiQrImage" src="assets/qr_code.svg" alt="Scan QR Code" class="wifi-qr-img" />
+      </div>
+
+      <div class="wifi-url-box">
+        <span class="wifi-url-label">Network URL</span>
+        <div class="wifi-url-row">
+          <input type="text" id="wifiNetworkUrl" readonly value="http://192.168.1.6:3000" class="wifi-url-input" />
+          <button id="copyWifiUrlBtn" class="wifi-copy-btn" title="Copy to clipboard">
+            <svg class="wifi-copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <span id="copyWifiUrlText">Copy</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="wifi-instructions">
+        <div class="wifi-step">
+          <span class="wifi-step-num">1</span>
+          <span>Connect phone to <strong>same Wi-Fi network</strong></span>
+        </div>
+        <div class="wifi-step">
+          <span class="wifi-step-num">2</span>
+          <span>Open camera and <strong>scan QR code</strong> (or open URL)</span>
+        </div>
+        <div class="wifi-step">
+          <span class="wifi-step-num">3</span>
+          <span>Instant mobile testing & executor downloads!</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<script src="app.js"></script>
+<!-- CAPTCHA Verification Modal -->
+<div id="captchaModal" class="captcha-modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="captchaModalTitle" aria-describedby="captchaModalDesc">
+  <div class="captcha-modal-card">
+    <div class="captcha-modal-header">
+      <div class="captcha-modal-title">
+        <div class="captcha-icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h4 id="captchaModalTitle" data-i18n="captcha.modal_title">Verification Required</h4>
+          <p id="captchaModalDesc" data-i18n="captcha.modal_subtitle">Cloudflare Turnstile verification required by bypass.city</p>
+        </div>
+      </div>
+      <button type="button" class="captcha-close-btn" id="closeCaptchaModal" aria-label="Close modal">&times;</button>
+    </div>
+
+    <div class="captcha-modal-body">
+      <!-- Target URL summary -->
+      <div class="captcha-target-box">
+        <span class="captcha-target-label" data-i18n="captcha.target_label">Target Link:</span>
+        <div class="captcha-target-url" id="captchaTargetUrl">https://...</div>
+      </div>
+
+      <!-- State: Unavailable / Third-Party Embedding Not Supported -->
+      <div class="captcha-state-box" id="captchaStateUnavailable">
+        <div class="captcha-notice-card">
+          <svg class="notice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <div class="notice-text">
+            <strong data-i18n="captcha.notice_heading">External Verification Required</strong>
+            <p data-i18n="captcha.explanation">bypass.city requires Cloudflare Turnstile verification. Direct third-party embedding is not supported by the provider. Please complete verification directly on bypass.city.</p>
+          </div>
+        </div>
+
+        <div class="captcha-actions">
+          <button type="button" class="captcha-primary-btn" id="captchaModalRetryBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"/>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+            </svg>
+            <span data-i18n="captcha.retry">Retry Extraction</span>
+          </button>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="captcha-secondary-btn" id="captchaOpenExtBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            <span id="captchaOpenExtBtnText" data-i18n="captcha.open_button">Open bypass.city (Optional)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- State: Loading / Checking -->
+      <div class="captcha-state-box hidden" id="captchaStateLoading">
+        <div class="captcha-spinner"></div>
+        <span class="captcha-loading-text" data-i18n="captcha.status_checking">Checking verification options...</span>
+      </div>
+    </div>
+
+    <div class="captcha-modal-footer">
+      <button type="button" class="captcha-dismiss-btn" id="dismissCaptchaModal" data-i18n="captcha.close">Back to DenKi</button>
+    </div>
+  </div>
+</div>
+
+<!-- Image Lightbox Modal -->
+<div id="image-modal" class="hidden">
+  <span id="close-image-modal">&times;</span>
+  <img id="expanded-image" src="" alt="Expanded Script Icon" />
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!--  STANDARD UI CLICK SOUND ENGINE (Web Audio API: Copy & Install)     -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  // Standard UI Sound Asset Paths
+  const SOUND_PATHS = {
+    copy: 'assets/sounds/copy.mp3',
+    install: 'assets/sounds/install.mp3'
+  };
+
+  const AudioCtxClass = window.AudioContext || window.webkitAudioContext;
+  let audioCtx = null;
+  const audioBuffers = {
+    copy: null,
+    install: null
+  };
+
+  function getAudioContext() {
+    if (!audioCtx && AudioCtxClass) {
+      audioCtx = new AudioCtxClass();
+    }
+    if (audioCtx && audioCtx.state === 'suspended') {
+      audioCtx.resume().catch(function () {});
+    }
+    return audioCtx;
+  }
+
+  // Pre-fetch and pre-decode both sound files into in-memory AudioBuffers (Zero Latency)
+  function preloadSound(type, path) {
+    fetch(path)
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.arrayBuffer();
+      })
+      .then(function (arrayBuf) {
+        const ctx = getAudioContext();
+        if (ctx) {
+          return ctx.decodeAudioData(arrayBuf);
+        }
+      })
+      .then(function (decoded) {
+        if (decoded) {
+          audioBuffers[type] = decoded;
+        }
+      })
+      .catch(function (err) {
+        console.warn('[SoundEngine] Failed to decode ' + type + ' sound:', err);
+      });
+  }
+
+  // Preload immediately on script load
+  preloadSound('copy', SOUND_PATHS.copy);
+  preloadSound('install', SOUND_PATHS.install);
+
+  // Instant overlapping playback using AudioBufferSourceNode (Zero Latency)
+  function playSound(type, volume) {
+    const ctx = getAudioContext();
+    if (!ctx) return;
+
+    if (ctx.state === 'suspended') {
+      ctx.resume().catch(function () {});
+    }
+
+    const buffer = audioBuffers[type];
+    if (buffer) {
+      try {
+        const source = ctx.createBufferSource();
+        const gainNode = ctx.createGain();
+        gainNode.gain.value = (typeof volume === 'number') ? volume : 0.85;
+        source.buffer = buffer;
+        source.connect(gainNode);
+        gainNode.connect(ctx.destination);
+        source.start(0);
+      } catch (err) {
+        console.warn('[SoundEngine] Play error:', err);
+      }
+    } else {
+      // If buffer is still buffering, re-trigger preload
+      preloadSound(type, SOUND_PATHS[type]);
+    }
+  }
+
+  // Global APIs for click triggers
+  window.playCopySound = function () {
+    playSound('copy', 0.85);
+  };
+
+  window.playInstallSound = function () {
+    playSound('install', 0.90);
+  };
+
+  // Global Delegated Click Listener for Copy and Install Buttons
+  document.addEventListener('click', function (e) {
+    // 1. Copy Script Buttons (Soft tactile UI click sound)
+    const copyBtn = e.target.closest(
+      '.card-copy-btn, ' +
+      '.wifi-copy-btn, ' +
+      '#copyTerminalBtn, ' +
+      '.terminal-btn, ' +
+      '.modal-copy-btn, ' +
+      '#modalCopyBtn, ' +
+      '.bypass-copy-btn, ' +
+      '#bypassCopyKeyBtn, ' +
+      '.bypass-key-link, ' +
+      '#bypassKeyLink, ' +
+      '[data-action="copy"]'
+    );
+    if (copyBtn) {
+      window.playCopySound();
+      return;
+    }
+
+    // 2. Install (OTA) & Download Buttons (Success Chime sound)
+    const installBtn = e.target.closest(
+      '.tool-btn-install, ' +
+      '.tool-action-btn, ' +
+      'a[href^="itms-services:"], ' +
+      'a[download], ' +
+      '.download-btn, ' +
+      '.android-btn, ' +
+      '.ios-btn, ' +
+      '[data-action="download"]'
+    );
+    if (installBtn) {
+      window.playInstallSound();
+      return;
+    }
+  }, { capture: true, passive: true });
+
+})();
+</script>
+
+<script src="app.js?v=20261026_03"></script>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!--  INTERACTIVE WATER RIPPLE / LIQUID HALFTONE CANVAS ENGINE           -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  const canvas = document.getElementById('liquid-halftone-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d', { alpha: true });
+  if (!ctx) return;
+
+  // Visual & Physics Configuration
+  const GAP_DESKTOP = 28;
+  const GAP_MOBILE = 24;
+  const BASE_RADIUS = 2.0;
+  const SPRING_STIFFNESS = 0.058;
+  const DAMPING = 0.86;
+  const PUSH_FORCE = 13.5;
+
+  let width = 0;
+  let height = 0;
+  let dpr = 1;
+  let dots = [];
+  let ripples = [];
+  let animationId = null;
+  let isRunning = false;
+  let idleFrames = 0;
+
+  const pointer = {
+    x: -9999,
+    y: -9999,
+    prevX: -9999,
+    prevY: -9999,
+    vx: 0,
+    vy: 0,
+    active: false,
+    lastActive: 0
+  };
+
+  class HalftoneDot {
+    constructor(ox, oy, radius) {
+      this.ox = ox;
+      this.oy = oy;
+      this.x = ox;
+      this.y = oy;
+      this.vx = 0;
+      this.vy = 0;
+      this.baseRadius = radius;
+      this.radius = radius;
+      this.alpha = 0.42;
+      this.colorState = 0;
+    }
+
+    update(ptr, effectRadius) {
+      // 1. Water fluid displacement from cursor / finger
+      if (ptr.active) {
+        const dx = this.x - ptr.x;
+        const dy = this.y - ptr.y;
+        const dist = Math.hypot(dx, dy);
+
+        if (dist < effectRadius && dist > 0.1) {
+          const factor = 1 - dist / effectRadius;
+          const force = Math.pow(factor, 1.8) * PUSH_FORCE;
+          const nx = dx / dist;
+          const ny = dy / dist;
+
+          this.vx += nx * force;
+          this.vy += ny * force;
+
+          // Drag wake force along pointer motion vector
+          this.vx += ptr.vx * factor * 0.35;
+          this.vy += ptr.vy * factor * 0.35;
+        }
+      }
+
+      // 2. Expanding circular water ripple waves
+      for (let i = 0; i < ripples.length; i++) {
+        const rip = ripples[i];
+        const rdx = this.x - rip.x;
+        const rdy = this.y - rip.y;
+        const rdist = Math.hypot(rdx, rdy);
+        const waveDist = Math.abs(rdist - rip.radius);
+
+        if (waveDist < rip.thickness && rdist > 0.1) {
+          const wavePhase = Math.cos((waveDist / rip.thickness) * (Math.PI / 2));
+          const waveStrength = wavePhase * rip.strength * (1 - rip.radius / rip.maxRadius);
+          const rnx = rdx / rdist;
+          const rny = rdy / rdist;
+
+          this.vx += rnx * waveStrength;
+          this.vy += rny * waveStrength;
+        }
+      }
+
+      // 3. Spring physics (Hooke's Law back to origin point)
+      const ax = (this.ox - this.x) * SPRING_STIFFNESS;
+      const ay = (this.oy - this.y) * SPRING_STIFFNESS;
+
+      this.vx = (this.vx + ax) * DAMPING;
+      this.vy = (this.vy + ay) * DAMPING;
+
+      this.x += this.vx;
+      this.y += this.vy;
+
+      // 4. Dynamic appearance based on displacement magnitude
+      const disp = Math.hypot(this.x - this.ox, this.y - this.oy);
+      this.radius = this.baseRadius + Math.min(3.8, disp * 0.2);
+      this.alpha = Math.min(0.96, 0.4 + disp * 0.06);
+      this.colorState = Math.min(1, disp * 0.08);
+
+      return Math.abs(this.vx) + Math.abs(this.vy) + disp;
+    }
+
+    draw(context) {
+      context.beginPath();
+      context.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      if (this.colorState > 0.25) {
+        // Glowing lilac / light-violet on wave crest
+        context.fillStyle = 'rgba(235, 205, 255, ' + this.alpha + ')';
+      } else {
+        // Base light purple / violet halftone dot
+        context.fillStyle = 'rgba(180, 115, 255, ' + this.alpha + ')';
+      }
+      context.fill();
+    }
+  }
+
+  function resize() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    width = window.innerWidth;
+    height = window.innerHeight;
+
+    canvas.width = Math.floor(width * dpr);
+    canvas.height = Math.floor(height * dpr);
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.scale(dpr, dpr);
+
+    initDots();
+    startLoop();
+  }
+
+  function initDots() {
+    dots = [];
+    const isMobile = width < 768;
+    const gap = isMobile ? GAP_MOBILE : GAP_DESKTOP;
+    const radius = isMobile ? 1.85 : BASE_RADIUS;
+
+    const cols = Math.ceil(width / gap) + 1;
+    const rows = Math.ceil(height / gap) + 1;
+
+    for (let r = 0; r <= rows; r++) {
+      const offsetX = (r % 2 === 1) ? gap * 0.5 : 0; // Staggered honeycomb halftone grid
+      for (let c = 0; c <= cols; c++) {
+        const ox = c * gap + offsetX;
+        const oy = r * gap;
+        dots.push(new HalftoneDot(ox, oy, radius));
+      }
+    }
+  }
+
+  function addRipple(x, y, strength) {
+    const isMobile = width < 768;
+    ripples.push({
+      x: x,
+      y: y,
+      radius: 4,
+      maxRadius: Math.min(width, height) * (isMobile ? 0.45 : 0.4),
+      speed: isMobile ? 5.2 : 6.2,
+      strength: strength || 8.5,
+      thickness: isMobile ? 38 : 46
+    });
+    startLoop();
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    const isMobile = width < 768;
+    const effectRadius = isMobile ? 105 : 140;
+
+    // Advance and prune ripples
+    for (let i = ripples.length - 1; i >= 0; i--) {
+      const rip = ripples[i];
+      rip.radius += rip.speed;
+      if (rip.radius >= rip.maxRadius) {
+        ripples.splice(i, 1);
+      }
+    }
+
+    // Decay pointer velocity
+    pointer.vx *= 0.85;
+    pointer.vy *= 0.85;
+
+    // Update and draw all halftone dots
+    let totalActivity = 0;
+    const totalDots = dots.length;
+    for (let i = 0; i < totalDots; i++) {
+      totalActivity += dots[i].update(pointer, effectRadius);
+      dots[i].draw(ctx);
+    }
+
+    // Idle sleep check: if no pointer activity and all dots are settled, suspend loop
+    const now = performance.now();
+    const timeSinceActive = now - pointer.lastActive;
+
+    if (!pointer.active && ripples.length === 0 && totalActivity < 0.15 && timeSinceActive > 1200) {
+      idleFrames++;
+      if (idleFrames > 30) {
+        isRunning = false;
+        animationId = null;
+        return; // Enter power-saving idle state
+      }
+    } else {
+      idleFrames = 0;
+    }
+
+    animationId = requestAnimationFrame(animate);
+  }
+
+  function startLoop() {
+    idleFrames = 0;
+    if (!isRunning) {
+      isRunning = true;
+      animationId = requestAnimationFrame(animate);
+    }
+  }
+
+  // ─── Non-intrusive Event Listeners (passive on window) ───
+  function updatePointer(clientX, clientY, active) {
+    if (pointer.active && active) {
+      pointer.vx = (clientX - pointer.prevX) * 0.45;
+      pointer.vy = (clientY - pointer.prevY) * 0.45;
+    } else {
+      pointer.vx = 0;
+      pointer.vy = 0;
+    }
+    pointer.prevX = pointer.x;
+    pointer.prevY = pointer.y;
+    pointer.x = clientX;
+    pointer.y = clientY;
+    pointer.active = active;
+    pointer.lastActive = performance.now();
+    startLoop();
+  }
+
+  window.addEventListener('pointermove', function (e) {
+    updatePointer(e.clientX, e.clientY, true);
+  }, { passive: true });
+
+  window.addEventListener('pointerdown', function (e) {
+    updatePointer(e.clientX, e.clientY, true);
+    addRipple(e.clientX, e.clientY, 10.5);
+  }, { passive: true });
+
+  window.addEventListener('pointerup', function () {
+    pointer.active = false;
+    startLoop();
+  }, { passive: true });
+
+  window.addEventListener('pointercancel', function (e) {
+    if (e.pointerType === 'touch') return; // Don't interrupt mobile touch drag gestures
+    pointer.active = false;
+    startLoop();
+  }, { passive: true });
+
+  window.addEventListener('pointerleave', function () {
+    pointer.active = false;
+    startLoop();
+  }, { passive: true });
+
+  // Touch events (High-precision mobile touch & drag on iOS Safari & Android)
+  window.addEventListener('touchmove', function (e) {
+    if (e.touches && e.touches[0]) {
+      const t = e.touches[0];
+      updatePointer(t.clientX, t.clientY, true);
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchstart', function (e) {
+    if (e.touches && e.touches[0]) {
+      const t = e.touches[0];
+      updatePointer(t.clientX, t.clientY, true);
+      addRipple(t.clientX, t.clientY, 11);
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchend', function () {
+    pointer.active = false;
+    startLoop();
+  }, { passive: true });
+
+  window.addEventListener('touchcancel', function () {
+    pointer.active = false;
+    startLoop();
+  }, { passive: true });
+
+  // Keep fluid engine awake and reactive while user scrolls the page
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', function () {
+    const currentScrollY = window.scrollY;
+    const deltaY = currentScrollY - lastScrollY;
+    lastScrollY = currentScrollY;
+
+    if (Math.abs(deltaY) > 2) {
+      if (pointer.active) {
+        pointer.vy += Math.sign(deltaY) * Math.min(Math.abs(deltaY) * 0.25, 6);
+      }
+      startLoop();
+    }
+  }, { passive: true });
+
+  // Window Resize & Dynamic Viewport Listeners (matching window.innerWidth and window.innerHeight)
+  let resizeRaf = null;
+  function handleResize() {
+    if (resizeRaf) cancelAnimationFrame(resizeRaf);
+    resizeRaf = requestAnimationFrame(resize);
+  }
+
+  window.addEventListener('resize', handleResize, { passive: true });
+  window.addEventListener('orientationchange', function () {
+    setTimeout(resize, 100);
+  }, { passive: true });
+
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', handleResize, { passive: true });
+  }
+
+  // Initial setup
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', resize);
+  } else {
+    resize();
+  }
+})();
+</script>
 </body>
 </html>
