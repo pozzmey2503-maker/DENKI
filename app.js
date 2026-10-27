@@ -721,8 +721,8 @@
       ? rawHub
       : (smart.matchedHub ? smart.matchedHub.name : (rawHub || gameName));
 
-    // Display image prioritized: Official script icon -> Game icon -> Site logo
-    const resolvedDisplay = scriptIcon || gameIcon || DEFAULT_HUB_LOGO;
+    // Display image prioritized: Local Roblox game icon (/assets/icons/roblox-*.png)
+    const resolvedDisplay = gameIcon || '/assets/icons/roblox-bluered-roblox.png';
 
     return {
       id: String(raw.id || raw._id || ('script_' + Math.random().toString(36).substr(2, 9))),
@@ -754,30 +754,27 @@
   }
 
   function renderAvatarHtml(s) {
+    if (!s) s = {};
     const safeTitle = escapeHtml(s.hubName || s.title || 'Roblox Script Hub');
     const neonColor = s.neonColor || '#38BDF8';
     const glowColor = s.glowColor || 'rgba(56, 189, 248, 0.45)';
 
-    // Smart Icon Hierarchy:
-    // 1. Official script icon (if specified)
-    // 2. Game icon (if no script icon or if script icon fails to load)
-    // 3. Site default logo (only as genuine last resort)
-    const primaryImg = s.scriptIcon || s.gameIcon || s.image || DEFAULT_HUB_LOGO;
-    const gameFallback = s.gameIcon || DEFAULT_HUB_LOGO;
+    // Icon Priority: Always prioritize local Roblox game icon (/assets/icons/roblox-*.png)
+    // scriptIcon and Hub Logos are excluded even if present in the data
+    const defaultGameIcon = '/assets/icons/roblox-bluered-roblox.png';
+    const primaryImg = s.gameIcon || getGameIcon(s.game, s.title || s.scriptName) || defaultGameIcon;
 
     const safePrimary = escapeHtml(primaryImg);
-    const safeGameIcon = escapeHtml(gameFallback);
-    const safeDefault = escapeHtml(DEFAULT_HUB_LOGO);
+    const safeDefault = escapeHtml(defaultGameIcon);
 
     const styleAttr = `style="--neon-color:${neonColor};--glow-color:${glowColor};background:#0F172A;"`;
 
-    // Smart Fallback: on error, attempt game icon first before site logo
-    const onErrorHandler = `if(!this.dataset.triedGame&&this.dataset.gameIcon&&this.dataset.gameIcon!==this.src){this.dataset.triedGame='true';this.src=this.dataset.gameIcon;}else{this.onerror=null;this.src='${safeDefault}';}`;
+    // Local Roblox game icon fallback on error
+    const onErrorHandler = `this.onerror=null;this.src='${safeDefault}';`;
 
     return `
       <div class="hub-avatar" ${styleAttr} title="${safeTitle}">
         <img src="${safePrimary}" 
-             data-game-icon="${safeGameIcon}" 
              alt="${safeTitle}" 
              class="hub-avatar-img" 
              loading="lazy" 
