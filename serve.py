@@ -393,6 +393,13 @@ class DevHTTPRequestHandler(SimpleHTTPRequestHandler):
                     )
                 ]
 
+        # Prioritize Chilli and FyyCommunity to top index
+        def script_priority_weight(s):
+            text = f"{s.get('title', '')} {s.get('game', '')} {s.get('author', '')} {s.get('hubName', '')}".lower()
+            return 1000 if ('chilli' in text or 'chili' in text or 'fyycommunity' in text) else 0
+
+        filtered.sort(key=script_priority_weight, reverse=True)
+
         total_items = len(filtered)
         total_pages = max(1, math.ceil(total_items / per_page))
         start_idx = (page - 1) * per_page

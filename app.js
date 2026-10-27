@@ -1210,6 +1210,12 @@
     });
   }
 
+  function getScriptPriorityWeight(s) {
+    if (!s) return 0;
+    const text = `${s.title || ''} ${s.scriptName || ''} ${s.game || ''} ${s.author || ''} ${s.hubName || ''}`.toLowerCase();
+    return (text.includes('chilli') || text.includes('chili') || text.includes('fyycommunity')) ? 1000 : 0;
+  }
+
   /**
    * Fetch scripts from backend endpoint with dynamic origin resolution.
    * If primary endpoint fails, gracefully falls back to local /data/database.json
@@ -1310,6 +1316,8 @@
               return terms.every((t) => fullText.includes(t));
             });
           }
+          // Prioritize Chilli & FyyCommunity scripts to highest index
+          filtered.sort((a, b) => getScriptPriorityWeight(b) - getScriptPriorityWeight(a));
           const perPage = PER_PAGE || 12;
           const totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
           const paged = filtered.slice((page - 1) * perPage, page * perPage);
@@ -1500,6 +1508,9 @@
       renderEmptyState();
       return;
     }
+
+    // Priority sort: scripts with Chilli or FyyCommunity get highest weight (index 0+)
+    state.scripts.sort((a, b) => getScriptPriorityWeight(b) - getScriptPriorityWeight(a));
 
     dom.scriptsGrid.innerHTML = state.scripts.map((s, i) => generateScriptCardHtml(s, i)).join('');
 
