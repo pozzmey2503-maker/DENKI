@@ -721,8 +721,14 @@
       ? rawHub
       : (smart.matchedHub ? smart.matchedHub.name : (rawHub || gameName));
 
-    // Display image prioritized: Local Roblox game icon (/assets/icons/roblox-*.png)
-    const resolvedDisplay = gameIcon || '/assets/icons/roblox-bluered-roblox.png';
+    // Check exception for Chilli or FyyCommunity
+    const checkText = `${title} ${cleanHubName} ${author}`.toLowerCase();
+    const isException = checkText.includes('chilli') || checkText.includes('chili') || checkText.includes('fyycommunity');
+
+    // Display image prioritized: scriptIcon for Chilli / FyyCommunity, otherwise gameIcon
+    const resolvedDisplay = (isException && scriptIcon)
+      ? scriptIcon
+      : (gameIcon || '/assets/icons/roblox-bluered-roblox.png');
 
     return {
       id: String(raw.id || raw._id || ('script_' + Math.random().toString(36).substr(2, 9))),
@@ -759,18 +765,29 @@
     const neonColor = s.neonColor || '#38BDF8';
     const glowColor = s.glowColor || 'rgba(56, 189, 248, 0.45)';
 
-    // Icon Priority: Always prioritize local Roblox game icon (/assets/icons/roblox-*.png)
-    // scriptIcon and Hub Logos are excluded even if present in the data
     const defaultGameIcon = '/assets/icons/roblox-bluered-roblox.png';
-    const primaryImg = s.gameIcon || getGameIcon(s.game, s.title || s.scriptName) || defaultGameIcon;
+    const gameIcon = s.gameIcon || getGameIcon(s.game, s.title || s.scriptName) || defaultGameIcon;
+
+    // Check exception: "Chilli" or "FyyCommunity" gets to use their own scriptIcon / Logo
+    const checkText = `${s.title || ''} ${s.scriptName || ''} ${s.hubName || ''} ${s.author || ''}`.toLowerCase();
+    const isException = checkText.includes('chilli') || checkText.includes('chili') || checkText.includes('fyycommunity');
+
+    let primaryImg = gameIcon;
+    let fallbackImg = defaultGameIcon;
+
+    if (isException) {
+      // Prioritize authentic scriptIcon / Logo for Chilli or FyyCommunity
+      primaryImg = s.scriptIcon || (checkText.includes('fyycommunity') ? '/assets/icons/script2-logo.png' : '/assets/icons/hub-chilli-hub.png');
+      fallbackImg = gameIcon;
+    }
 
     const safePrimary = escapeHtml(primaryImg);
-    const safeDefault = escapeHtml(defaultGameIcon);
+    const safeFallback = escapeHtml(fallbackImg);
 
     const styleAttr = `style="--neon-color:${neonColor};--glow-color:${glowColor};background:#0F172A;"`;
 
-    // Local Roblox game icon fallback on error
-    const onErrorHandler = `this.onerror=null;this.src='${safeDefault}';`;
+    // Local fallback on image load error
+    const onErrorHandler = `this.onerror=null;this.src='${safeFallback}';`;
 
     return `
       <div class="hub-avatar" ${styleAttr} title="${safeTitle}">
